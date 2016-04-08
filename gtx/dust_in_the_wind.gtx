@@ -1,0 +1,56 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{even}
+{title: Dust In The Wind}
+{subtitle: Kerry Livgren}
+
+{define:C      t x 3 2 n 1 n}
+{define:CMaj7  t x 3 2 n n n}
+{define:C9     t x 3 2 n 3 n}
+{define:Am     t x n 2 2 1 n}
+{define:A9     t x n 2 2 n n}
+{define:Asus4  t x n 2 2 3 n}
+
+{a:Vers 1:}
+{bridge}
+	I [C]close [G/H]my [Am]eyes, [G]only for a [Dm]moment and the [Am]moment's gone. [Am-G]
+  [C]All [G/H]my [Am]dreams, [G]pass before me [Dm]eyes are curi[Am]osity.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [D/F#]Dust [G] in the [Am]wind, [Am/G] [D/F#]all we are is [G]dust in the [Am]wind. [G]
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+  [C]Same [G/H]old [Am]song, [G]just a drop of [Dm]water in an [Am]endless sea. [Am-G]
+  [C]All [G/H]we [Am]do [G]crumbles to the gro[Dm]und, though we re[Am]fuse to see.
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Vers 3:}
+{bridge}
+  [C]Don't [G/H]hang [Am]on, [G]nothing last [Dm]forever but the [Am]earth and sky. [Am-G]
+  It [C]slips [G/H]away [Am] [G]all your money won't [Dm]another minute [Am]buy.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [D]Dust [G] in the [Am]wind, [D]all we are is [G]dust in the [Am]wind. [D]
+     Dust [G] in the [Am]wind, [D]everything is [G]dust in the [Am]wind.
+{/chorus}
+
+{np}
+
+{a:Intro}
+
+{guitartab: [14.5ex;C]&[5;1]&[2;3]__[3;2][4;0][2;3][5;1][3;2][4;0]|[14.5ex;CMaj7]&[5;0]&[2;3]__[3;2][4;0][2;3][5;0][3;2][4;0]|[14.5ex;C9]&[5;3]&[2;3]__[3;2][4;0][2;3][5;3][3;2][4;0]|[14.5ex;C]&[5;1]&[2;3]__[3;2][4;0][2;3][5;1][3;2][4;0]}
+{guitartab: [14.5ex;A9]&[5;0]&[2;0]__[3;2][4;2][2;0][5;0][3;2][4;2]|[14.5ex;Asus4]&[5;3]&[2;0]__[3;2][4;2][2;0][5;3][3;2][4;2]|[14.5ex;Am]&[5;1]&[2;0]__[3;2][4;2][2;0][5;1][3;2][4;2]|[14.5ex;A9]&[5;0]&[2;0]__[3;2][4;2][2;0][5;0][3;2][4;2]}
+{guitartab: [14.5ex;C9]&[5;3]&[2;3]__[3;2][4;0][2;3][5;3][3;2][4;0]|[14.5ex;C]&[5;1]&[2;3]__[3;2][4;0][2;3][5;1][3;2][4;0]|[14.5ex;CMaj7]&[5;0]&[2;3]__[3;2][4;0][2;3][5;0][3;2][4;0]|[14.5ex;C9]&[5;3]&[2;3]__[3;2][4;0][2;3][5;3][3;2][4;0]}
+{guitartab: [14.5ex;Am]&[5;1]&[2;0]__[3;2][4;2][2;0][5;1][3;2][4;2]|[14.5ex;A9]&[5;0]&[2;0]__[3;2][4;2][2;0][5;0][3;2][4;2]|[14.5ex;Asus4]&[5;3]&[2;0]__[3;2][4;2][2;0][5;3][3;2][4;2]|[14.5ex;Am]&[5;1]&[2;0]__[3;2][4;2][2;0][2;2][14.5ex;C]&[2;3]&[3;2]&[4;0]&[5;1] }

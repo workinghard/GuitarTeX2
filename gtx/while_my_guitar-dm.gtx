@@ -1,0 +1,50 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: While My Guitar Gently Weeps}
+{subtitle: The Beatles}
+
+
+{define: Dm/C   t n 3 n 2 3 1}
+{define: Dm/H  t n 2 n 2 3 1}
+
+{a:Vers 1:}
+{bridge}
+	I [Dm]look at you [Dm/C]all see the [Dm/H]love there that's 	[H]sleeping
+	[Dm]While my gui[C]tar gently [G]weeps      [A]
+	I [Dm]look at the [Dm/C]floor and I [Dm/H]see it needs [H]sweeping
+	[Dm]Still my gui[C]tar gently [F]weeps       [A]
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [D]I don't know [F#m]why [Hm]
+     nobody [F#m]told you [Em]how to unfold your [A]love   [A7]
+     [D]I don't know [F#m]how [Hm] someone contr[F#m]olled you
+     [Em]They bought and sold [A]you    [A7]
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	I look at the world and I notice it's turning
+	While my guitar gently weeps
+	With every mistake we must surely be learning
+	Still my guitar gently weeps
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     I don't know how you were diverted, You were perverted too
+     I don't know how you were inverted,  No one alerted you.
+{/chorus}
+
+{a:Vers 3:}
+{bridge}
+	I [Dm]look at you [Dm/C]all see the [Dm/H]love there that's [H]sleeping
+	[Dm]While my gui[C]tar gently [G]weeps      [A]
+	[Dm]..Look at you [Dm/C]all [Dm/H]                  [H]
+	[Dm]Still my gui[C]tar gently [F]weeps      [A]
+{/bridge}

@@ -1,0 +1,69 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+{language: german}
+{color_chorus:0,0,0}
+
+{even}
+{title: Nichts Mehr Wie Es War}
+{subtitle: Element Of Crime}
+
+{define:Dm  t x n n 2 3 1}
+{define:Dm/C  t x 3 n 2 3 1} 
+{define:Dm/H  t x 2 n 2 3 1}
+
+{a:Vers 1:}
+{bridge}
+	Wir [Am]hocken uns traurig in die [E7]Dämmerung
+	Auf der [Am]Suche nach dem guten [E7]alten Schwung
+	Wessen [Dm]Schnapsidee [Dm/C]war es denn [Dm/H]hierher zu gehen
+	Und dem [C]weichgespülten Elend ins [E7]Auge zu sehen
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Denn [Dm]eins war doch [G7]vorher völlig [C]klar: [Am]
+     Hier ist [F]nichts, [E7]nichts mehr wie es [Am]war [E7] [Am]
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	Am [Am]Tresen wird betrügerisch [E7]eingeschenkt
+	Und die [Am]Mehrheit will sowieso ein [E7]Sportgetränk
+	Und [Dm]genauso wie sie [Dm/C]trinken, so [Dm/H]tanzen sie auch
+	Laß die [C]Kippen in der Tasche, hier [E7]wird nicht mehr geraucht
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Das [Dm]bringt doch die [G7]Gesundheit in [C]Gefahr [Am]
+     Hier ist [F]nichts, [E7]nichts mehr wie es [Am]war [E7] [Am]
+{/chorus}
+
+{a:Vers 3:}
+{bridge}
+	Die 15 Mann auf des toten Manns Kiste
+	Die mußten da weg, weil die jetzt fest vermietet ist
+	Das Gebüsch mit dem stöhnenden Ungetier
+	Das hatte an Armen und an Beinen vier
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Das ist auch schon lange nicht mehr da
+     Es ist nichts, nichts mehr wie es war
+{/chorus}
+
+{a:Vers 4:}
+{bridge}
+	Ein alter Sack zu sein, ist hier nicht schwer
+	Und traurig ist das Leben als Reaktionär
+	Laß uns abgehauen sein, bevor man uns erwischt
+	Und wo ein Wille ist, mein Herz, da ist auch ein Gebüsch
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Schließlich sind wir jetzt die Avantgarde
+     Denn es ist nichts, nichts mehr wie es war
+{/chorus}

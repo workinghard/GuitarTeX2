@@ -1,0 +1,59 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{even}
+{title: These Boots Are Made For Walkin}
+{subtitle: Nancy Sinatra}
+
+{a:Intro: 4 x E }
+
+{a:Vers 1:}
+{bridge}
+	[E]You keep saying, you've got something for me,
+	Something you call love, but confess.
+	[A]You've been messing where you shouldnt be messing,
+	And [E]now someone else is getting all your best.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     These [G]Boots are made for [Em]walking
+     And [G]that's just what they'll [Em]do,
+     [G]One of these days these [Em]boots [pause]are gonna walk all over you. [Zwischenspiel]
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	[E7]You keep lying when you ought to be truthing,
+	And you keep losing when you ought to not bet,
+	[A7]You keep sameing when you ought to be a changing,
+	Now [E7]what's rights right but you aint been right yet.
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Vers 3:}
+{bridge}
+	[E7]You keep playing where you shouldnt be playing, 
+	And you keep thinking that you'll never get burned , ha!
+	[A7]I just found me a brand new box of matches yeah
+	[E7]And what he knows you aint had time to learn.
+{/bridge}
+
+{a:Refrain ...}
+
+{np}
+
+{a:Vers 4:}
+{bridge}
+	[E]Are you ready boots, start walking....
+{/bridge}
+
+{a:Zwischenspiel:}
+
+\footnotesize
+{guitartab: [1;12][1;12]__[1;11][1;11]__[1;10][1;10]__[1;9][1;9] | [1;8][1;8]__[1;7][1;7]__[1;6][1;6]__[1;5][1;5]}
+\normalsize

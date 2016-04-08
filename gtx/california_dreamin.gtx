@@ -1,0 +1,42 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: California Dreamin}
+{subtitle: The Mamas and The Papas}
+
+{a:Refrain:}
+{chorus}
+     [E7]All the leaves are [Am]brown, [G] [F] and the [G]sky is [E7]grey.
+     [F]I've been for a [C]walk [E7] [Am] on a [F]winter's [E]day.
+{/chorus}
+
+{a:Vers 1:}
+{bridge}
+	[E7]I'd be safe and [Am]warm, [G] [F] if I [G]was in [E7]L.A.
+	California [Am]dreamin' [G] [F] on [G]such a winters [E7]day. [E]
+	Stopped into a [Am]church [G] [F] I passed al[G]ong the [E7]way
+	Oh I [F]got down on my [C]knees, [E7] [Am] and I pre[F]tend to [E]prey.
+	[E7]You know the preacher likes the [Am]cold, [G] [F]
+	he knows [G]I'm gonna [E7]stay.
+	California [Am]dreamin' [G] [F] on [G]such a winters [E7]day.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [E7]All the leaves are [Am]brown, [G] [F] and the [G]sky is [E7]grey.
+     [F]I've been for a [C]walk [E7] [Am] on a [F]winter's [E]day.
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	[E7]If I didn't [Am]tell her, [G] [F] I could [G]leave [E7]today
+	California [Am]dreamin' [G] [F] on [G]such a winters [E7]day. [E]
+	Stopped into a [Am]church [G] [F] I passed al[G]ong the [E7]way
+	Oh I [F]got down on my [C]knees, [E7] [Am] and I pre[F]tend to [E]prey.
+	[E7]You know the preacher likes the [Am]cold, [G] [F]
+	he knows [G]I'm gonna [E7]stay.
+	California [Am]dreamin' [G] [F] on [G]such a winters [E7]day.
+{/bridge}

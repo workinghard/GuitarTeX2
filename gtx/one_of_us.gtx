@@ -1,0 +1,58 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{even}
+{title: One Of Us}
+{subtitle: Joan Osborne}
+
+{define:Cadd9  t x 3 2 n 3 3} 
+{define:CMaj7  t x 3 2 n n n}
+
+{a:Capo: 2}
+{a:Intro: Em Cadd9 G D}
+
+{a:Vers 1:}
+{bridge}
+	If [Em]God had a [Cadd9]name, [G]what would it [D]be?
+	And would you [Em]call it to his [C]face
+	[G]If you were [D]faced with him
+	In [Em]all his [Cadd9]glory - [G]what would you [D]ask?
+	If you had [Em]just one [Cadd9]question? [G] [D]
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [CMaj7]Yeah... yeah... [G]God is [D]great
+     [CMaj7]Yeah... yeah... [G]God is [D]good
+     [CMaj7]Yeah... yeah... [D]yeah... yeah... yeah...
+     What if [Em]God was [Cadd9]one of us? [G] [D]
+     Just a [Em]slob like [Cadd9]one of us? [G] [D]
+     Just a [Em]stranger [Cadd9]on the [G]bus trying to [D]make his way home [Em] [Cadd9] [G] [D]
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	If [Em]God had a [Cadd9]face, [G]what would it [D]look like 
+	And would you [Em]want to [C]see?
+	[G]If seeing [D]meant that you would [Em]have to [Cadd9]believe, 
+	[G]In things like [D]heaven and in [Em]Jesus and the [Cadd9]saints [G]and all the [D]prophets
+{/bridge}
+
+{np}
+
+{a:Refrain:}
+{chorus}
+     [CMaj7]Yeah... yeah... [G]God is [D]great
+     [CMaj7]Yeah... yeah... [G]God is [D]good
+     [CMaj7]Yeah... yeah... [D]yeah... yeah... yeah...
+     What if [Em]God was [Cadd9]one of us? [G] [D]
+     Just a [Em]slob like [Cadd9]one of us? [G] [D]
+     Just a [Em]stranger [Cadd9]on the [G]bus trying to [D]make his way home [Em] [Cadd9] [G]
+     Trying to [D]make his way [Em]home [Cadd9] [G] 
+     Like up to [D]heaven all [Em]alone [Cadd9] [G]
+     Nobody [D]calling on the [Em]phone [Cadd9] [G]
+     Except for the [D]Pope, maybe in [Em]Rome. [Cadd9] [G] [D] [G]
+{/chorus}

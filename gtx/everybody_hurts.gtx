@@ -1,0 +1,56 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{even}
+{title: Everybody Hurts}
+{subtitle: REM}
+
+{define:A7  t x n 2 n 2 n}
+{define:F#  2 n 2 2 1 n n}
+{define:Hm  2 n n 2 2 1 n}
+
+{a:Intro: D G D G}
+
+{a:Vers 1:}
+{bridge}
+	[D] When the day is long[G], and the [D]night, the night is yours al[G]one.
+	[D] And you're sure you've had en[G]ough of this lif[D]e to hang [G]on.
+	\\
+	[Em]Don't let yourself g[A]o, ca[Em]use everybody cr[A]ies[Em], and everybody [A]hurts
+	s[D]ometimes, [G] sometimes everything is wr[D]ong.
+	\\
+	Now it's time to sing alo[G]ng [D]when your day is night al[G]one
+	[D] When you feel like let him go[G].
+	\\
+	[D] You think you've had too m[G]uch of this li[D]fe to hang [G] on[Em].
+	cause everybody hu[A]rts. [Em]To comfort in your fr[A]iends [Em]everybody [A] hurts[A7].
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [F#]Don't throw your h[Hm]and, ho-[F#]old [Hm]on. Do[F#]n't throw your [Hm]hand.
+     [C]If you feel like you're a[G]lone. [C]no, no, no, not al[Am]one.
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	If you're on your own. Of this life, the days and nights alone.
+	When you think you've had too much of this life, to hang on.
+	For everybody hurts. For sometimes everybody cries.
+	Everybody hurts. Sometimes everybody hurts.
+	so, hold on, hold on, hold on, hold on, ...
+{/bridge}
+
+{np}
+
+{a:Die 4 Bassl"aufe:}
+{guitartab: [14.5ex;G]&[1;3][4;0][5;0][6;3][5;0][4;0]|[1;3][4;0][5;0][1;2][4;0][5;0]|[14.5ex;Em]&[1;0][4;0][5;0][6;0][5;0][4;0]|[1;0][4;0][5;0][6;0][5;0][4;0] }
+
+{guitartab: [14.5ex;A]&[2;0][4;2][5;2][6;0][5;2][4;2]|[2;0][4;2][5;2][2;0][1;3][1;2]|[14.5ex;Em]&[1;0][4;0][5;0][6;0][5;0][4;0]|[1;0][4;0][5;0][6;0][5;0][4;0] }
+
+{guitartab: [14.5ex;C]&[2;3][4;0][5;1][6;0][5;1][4;0]|[2;3][4;0][5;1][2;2][4;0][5;1]|[14.5ex;Am]&[2;0][4;2][5;1][6;0][5;1][4;2]|[2;0][4;2][5;1][6;0][5;1][4;2] }
+
+{guitartab: [14.5ex;Hm]&[2;2][4;4][5;3][6;2][5;3][4;4]|[2;2][4;4][5;3][2;2][2;2][2;0]|[14.5ex;F#]&[1;2][4;3][5;2][6;2][5;2][4;3]|[1;2][4;3][5;2][6;2][5;2][4;3] }

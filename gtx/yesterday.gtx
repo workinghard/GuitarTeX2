@@ -1,0 +1,46 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: Yesterday (F)}
+{subtitle: The Beatles}
+
+{define:Em7  t n 2 2 n 3 3} 
+
+{a:Vers 1:}
+{bridge}
+	[F]Yesterday [Em7] all my [A7]troubles seemed so [Dm]far away  [/C]
+	[B]Now it [C7]looks as though they're [F]here to stay [/E]Oh [Dm]I be[G]lieve in [B]Yester[F]day
+	[F]Suddenly [Em7] I'm not [A7]half the man I [Dm]used to be [/C]
+	[B]there's a [C7]shadow hanging [F]over me [/E]Oh [Dm]Yester[G]day came [B]sudden[F]ly
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [Em7]Why [A7]she [Dm]had [/C]to [B]go [/A]I don't [Gm]know, she [C]wouldn't [F]say
+     [Em7]I [A7]said [Dm]some[/C]thing [B]wrong [/A]now I [Gm]long for [C]Yester[F]day
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	[F]Yesterday [Em7] love was [A7]such an easy [Dm]game to play [/C]
+	[B]Now I [C7]need a place to [F]hide away [/E]Oh [Dm]I be[G]lieve in [B]Yester[F]day
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [Em7]Why [A7]she [Dm]had [/C]to [B]go [/A]I don't [Gm]know, she [C]wouldn't [F]say
+     [Em7]I [A7]said [Dm]some[/C]thing [B]wrong [/A]now I [Gm]long for [C]Yester[F]day
+{/chorus}
+
+{a:Vers 3:}
+{bridge}
+	[F]Yesterday [Em7] love was [A7]such an easy [Dm]game to play [/C]
+	[B]Now I [C7]need a place to [F]hide away [/E]Oh [Dm]I be[G]lieve in [B]Yester[F]day
+{/bridge}
+
+{bridge}
+	[F]Mmm [G]Mmm [B]Mmm [F]Mmm
+{/bridge}

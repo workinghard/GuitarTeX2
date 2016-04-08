@@ -1,0 +1,461 @@
+\documentclass[12pt]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage[german]{babel}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{graphicx}
+
+\newcommand{\ul}{\underline{~}}
+
+\begin{document}
+
+	\section{Einf"uhrung}
+		$GuitarTeX_2$ ist ein Werkzeug für Gitarristen, die gut aussehende Ausdrucke ihrer Musikstücke 
+		oder Liederbücher aus ihren Chord- oder Chordpro-Dateien anfertigen wollen. Es benutzt das 
+		weit verbreitete Chord Format mit einigen Erweiterungen.\\
+
+		Es basiert auf einer Idee von Martin Leclerc und Mario Dorion aus Kanada und ihrem Programm 
+		Chord (Version 3.5 von 1993). Um $GuitarTeX_2$ zu nutzen, benötigen Sie Kenntnisse des Programmes 
+		Chord (wird später erklärt). Obwohl das Satzsystem \LaTeX ~von $GuitarTeX_2$ genutzt wird, müssen 
+		sie wenig (oder nichts) über \LaTeX ~wissen. $GuitarTeX_2$ produziert Postscript- oder PDF-Dateien 
+		automatisch, wenn Sie das möchten. Die von $GuitarTeX_2$ unterstützten Direktiven des Programms 
+		Chord werden erläutert.
+
+		\subsection{Eigenschaften}
+			\begin{itemize}
+				\item
+					Grafische Benutzeroberfläche mit integriertem Editor
+				\item
+					Druckt gut aussehende Liedblätter mit Akkorden unter Benutzung von Proportionalschriften
+				\item
+					Ausgabeformate \LaTeX, Postscript und PDF
+				\item
+					Kompatibel mit ChordPro-Format, Import von ASCII-Dateien
+				\item
+					Notensatz mit den \LaTeX-Paketen MusixTeX, MusixLyr und TabDefs
+				\item
+					Flexibles Seitenlayout (Größe, Ränder...)
+				\item
+					Benutzerdefinierte Farben für Refrain, Bridge ...
+				\item
+					Optionale Ausgabe von Akkordsymbolen am Ende eines Stückes
+				\item
+					ASCII-Tabulaturen und eingebaute Funktionen für Gitarrten- und Bass-Tabulaturen
+				\item
+					\LaTeX-Kommandos können in Chord-Dateien verwendet werden (für Profis)
+			\end{itemize}
+		
+		\subsection{Beispiel}
+			$GuitarTeX_2$ konvertiert eine Datei mit Text und Akkorden im Chord-Format in 
+			eine \LaTeX-Datei. Ein Beispiel für eine Chord-Datei: \\
+			\\
+			{\bf\{title:The Manual Song\} \\
+			\{st:No-one has yet claimed responsibility\} \\
+			~[D]I print verses [A7]in a [D]row, \\
+			The next line gets put [A7]down be[D]low, \\
+			Mumble mumble [A7]rhymes with [D]grow [G]     [G\#]     [A] \\
+			Done this verse, now [A7sus4]on we [quietly]go! \\
+			\\
+			\{soc\} \\
+			~[D]This is the [Bm]manual song \\
+			~[A7]No-one really knows what's [D]goin' on \\
+			~[D]This is the [F\#m]manual song \\
+			~[A7]And now the chorus is already [D]gone \\
+			\{eoc\} \\
+			\\
+			~[D]The second verse is [A7]like the [D]first, \\
+			The music poor, the [A7]verse is [D]worse, \\
+			I wrote this since [A7]I'd get [D]sued, \\
+			If I used real songs. [A7]This'll [D]do. \\
+			\\
+			\{c:repeat chorus\} } \\
+			\\
+			\includegraphics[width=1.1\textwidth]{pics/example1.pdf}
+			\\
+			Wenn Sie sich mit \LaTeX ~auskennen, können Sie die Ausgabedatei auch manuell verändern, 
+			bevor Sie sie in Postscript oder PDF umwandeln. Der Vorteil ist, dass Sie alle Möglichkeiten 
+			von \LaTeX ~einschließlich der vielen Zusatzpackete wie graphics oder MusicTeX einsetzen können.
+
+	\section{Installation}
+	
+		\subsection{Woher bekomme ich $GuitarTeX_2$}
+			Die aktuelle Version bekommen Sie immer auf der Download-Seite des $GuitarTeX_2$-Projektes: 
+			http://sourceforge.net/projects/guitartex2.
+			 
+		\subsection{Systemanforderungen}
+			$GuitarTeX_2$ ist ein Java Programm welches Betriessystemunabhägig entwickelt wurde.
+			Ben"otigt werden:
+			\begin{itemize}
+				\item 
+					Java 1.4 oder höher
+				\item
+					PDF - Betrachter (z.B. Acrobat Reader, xpdf)
+					Bei MacOS X braucht man es nicht
+				\item
+					Internetverbindung (optinal)
+				\item
+					\LaTeX (optional)
+			\end{itemize}
+
+		\subsection{Installation}
+			Laden sie sich das binäre Paket (GuitarTeX2.jar) herunter. Je nachdem wie sie Ihr
+			System konfiguriert haben, reicht es darauf zu Doppelklicken oder mit
+			''java -jar GuitarTeX2.jar'' aus der Kommandozeile zu starten. \\
+			\\
+			Es wird beim ersten Starten eine lokale Konfigurationsdatei
+			angelegt. Diese ist im Homeverzeichnis des Benutzers zu finden. Sie kann nachträglich
+			verändert werde und wird immer beim starten zuerst ausgelesen.  
+			
+	\section{Der Editor $GuitarTeX_2$}
+		<Hier kommt bald eine genaue Beschreibung> 
+	\section{Unterstützte Chord-Direktiven}
+		Direktiven sind Befehle zwischen geschweiften Klammern, die das Aussehen der erzeugten 
+		Ausgabe steuern. Einige häufig benötigte Direktiven können durch eine Abkürzung ersetzt 
+		werden (siehe Beispiele). $GuitarTeX_2$ bringt einige neue Direktiven mit, die das original 
+		Chord Programm nicht kennt.
+		\subsection{Spezielle Zeichen}
+			Einige Zeichen haben in GuitarTeX eine besondere Bedeutung:
+			\begin{itemize}
+				\item
+					\# am Anfang einer Zeile markiert einen Kommentar. Die Zeile wird von $GuitarTeX_2$ ignoriert
+				\item
+					/ darf nur in Akkorden mit Bass verwendet werden (z.B. A/E)
+			\end{itemize}
+		\subsection{Seitenlayout}
+			Die Direktive geometry bietet flexible Möglichkeiten, das Layout einer Seite anzupassen. 
+			Sie benutzt das \LaTeX-Paket geometry. Die folgende Beschreibung ist ein (modifizierter) 
+			Teil der Original-Dokumentation.
+			\\
+			Das geometry Paket bietet viele automatische Ausrichtungen, so dass nur wenige manuelle 
+			Angaben zum Seitenlayout erforderlich sind. In diesem Fall reicht ein einfaches \\
+			\\
+			{\bf\{geometry:a4paper\}} \\
+			\\
+			Das Setzen von Seitenrändern erfolgt mit \\
+			\\
+			{\bf\{geometry:margin=2.5cm\}} \\
+			\\
+			wenn alle Ränder einer Seite 2,5 Zentimeter betragen sollen.
+			Längenangaben erfolgen in
+			\begin{itemize}
+				\item
+					Zentimeter (cm)
+				\item
+					Millimeter (mm)
+				\item
+					Inch (in)
+				\item
+					Punkt (pt)
+			\end{itemize}
+		\subsubsection{Grunds"atzliches}
+			Das Seitenlayout besteht aus einer einfachen Struktur: Die Seite (paper) enthält einen 
+			Textkörper (total-body, druckbarer Bereich) und Ränder. Der Textkörper besteht aus Kopf- 
+			und Fußzeile, dem eigentlichen Text und (optional) den Randbemerkungen. Die vier Ränder 
+			heißen left-margin, right-margin, top-margin und bottom-margin.\\
+			\begin{itemize}
+				\item
+					paper: total-body (printable area) and margins 
+				\item
+					total-body: head, body(text area), foot and marginal notes
+				\item
+					margins: left-, right-, top- and bottom-margin
+			\end{itemize}
+			Jeder Rand wird von der jeweiligen Kante der Seite aus gemessen, z.B. left-margin meint 
+			den Abstand zwischen linker Seitenkante und dem Textkörper. Die Größen von paper, totalbody 
+			und margins stehen in diesen Ralationen:
+			\begin{itemize}
+				\item
+					paperwidth = left + width + right
+				\item
+					paperheight = top + height + bottom
+			\end{itemize}
+		\subsubsection{Optionen}
+			Optionen der Direktive geometry: \\
+			\begin{tabular}{|l|l|}
+				\textbf{Name} & \textbf{Bedeutung} \\
+				\hline
+				landscape	& schaltet um auf Querformat \\
+				portrait & schaltet um auf Hochformat \\
+				twoside & schaltet auf zweiseitige Ausgabe um. Die linken und rechen Ränder werden bei geraden 
+					und ungeraden Seiten symmetrisch angeordnet. \\
+				reversemp & Randbemerkungen erscheinen am linken Rand (statt am rechten Rand) \\
+				nohead & keine Reservierung von Platz für Kopfzeilen \\
+				nofoot & keine Reservierung von Platz für Fußzeilen \\
+				noheadfoot & keine Reservierung von Platz für Kopf- und Fußzeilen \\
+				a4paper, a5paper & spezifizert die Papiergröße, ohne Wert anzugeben \\
+				paperwidth & Breite des Papiers. paperwidth=$<$paperwidth$>$ \\
+				paperheight & Höhe des Papiers. paperheight=$<$paperheight$>$ \\
+				width & Breite des Textkörpers. width=$<$width$>$or totalwidth=$<$width$>$. Diese Angabe 
+					sollte nicht mit der Textbreite (textwidth) verwechselt werden. width enthält die 
+					Textbreite und die Breite der Randbemerkungen. \\
+				height & Höhe des Textkörpers (einschließlich Kopf- und Fußzeile). height=$<$height$>$ \\
+				left & linker Rand. left=$<$leftmargin$>$ \\
+				right & rechter Rand. right=$<$rightmargin$>$ \\
+				top & oberer Rand. top=$<$topmargin$>$ \\
+				bottom & unterer Rand. bottom=$<$bottommargin$>$ \\
+				margin & alle Ränder. margin=$<$margin$>$ \\
+				textwidth & Breite des Textes. textwidth=$<$width$>$ \\
+				textheight & Höhe des Textes. textheight=$<$height$>$ \\
+				marginpar & Breite der Randbemerkungen. marginpar=$<$length$>$ \\
+				marginparsep & Abstand zwischen Text und Randbemerkungen. marginparsep=$<$length$>$ \\
+				head & Höhe der Kopfzeile. head=$<$length$>$ \\
+				headsep & Abstand zwischen Kopfzeile und Text. headsep=$<$length$>$ \\
+				foot & Abstand zwischen Fußzeile und Text. foot=$<$length$>$ \\
+			\end{tabular}
+			\subsubsection{Beispiele}
+				Setzen Sie die Höhe des Textkörpers auf 10in, den unteren Rand auf 2cm. Der obere 
+				Rand wird automatisch berechnet:\\
+				\\
+				{\bf\{geometry:height=10in,bottom=2cm\}} \\
+				\\
+				oder: \\
+				\\
+				{\bf\{g:height=10in,bottom=2cm\}} \\
+				\\
+				oder: \\
+				\\
+				{\bf\{geometry:height=10in\} \\
+				\\
+				\{g:bottom:=2cm\}} \\
+				\\
+				Setzen Sie den linken, rechten und oberen Rand auf 3cm, 2cm und 2.5in. 
+				Es wird keine Kopfzeile benötigt. \\
+				\\
+				{\bf\{geometry:left=3cm,right=2cm, nohead,top=2.5in\}} \\
+				\\
+				oder: \\
+				\\
+				{\bf\{geometry:left=3cm\} \\
+				\{geometry:right=2cm\} \\
+				\{geometry:nohead\} \\
+				\{geometry:top=2.5in\}} \\
+				\\
+				oder : \\
+				\\
+				{\bf\{g:left=3cm,right=2cm\} \\
+				\{g:nohead, top=2.5in\}} \\
+				\\
+				und so weiter ... \\
+				Ändern Sie die Breite der Randbemerkungen auf 3cm \\
+				\\
+				{\bf\{geometry:marginpar=3cm\} \\
+				\{geometry:marginpar=3cm, reversemp\}} \\
+				\\
+				lässt die Randbemerkungen am linken Rand ausgeben.\\
+				Verwenden sie A5-Papier im Querformat: \\
+				\\
+				{\bf\{geometry:a5paper, landscape\}} \\
+		\subsection{Dokumentenstrukur}
+			\subsubsection{title}
+				Der Titel eines Stückes wird durch die Direktive title markiert. Der 
+				Titel wird zentriert mit einer vergrößerten Schrift ausgegeben. 
+				In Dokumenten mit mehreren Stücken verursacht title einen Seitenumbruch. \\
+				Beispiel:\\
+				\\
+				{\bf\{title:Go Down Moses\} \\
+				\{t:Go Down Moses\}} \\
+			\subsubsection{subtitle}
+				Die Direktive \textbf{subtitle}  dient zur Darstellung zusätzlicher 
+				Informationen, wie z.B. Interpret oder Komponist. \\
+				Beispiel: \\
+				\\
+				{\bf\{subtitle:written by John Lennon / Paul McCartney\} \\
+				\{st:written by John Lennon / Paul McCartney\}} \\
+			\subsubsection{bridge}
+				Eine Bridge wird mit \{bridge\} oder \{sob\} (start of bridge) am Anfang, 
+				und \{/bridge\} oder \{eob\} (end of bridge) am Ende markiert. Die Bridge 
+				wird auf Farbdruckern in blau ausgegeben. Die Farbe kann mit der Direktive 
+				color\underline{~}bridge angepasst werden (siehe Abschnitt namens color\underline{~}xxx).\\
+				Beispiel: \\
+				\\
+				{\bf \{bridge\} \\
+				I want her [Ab]everywhere [Fm] \\
+				And if [Bbm]she's beside me [C7]I know I need [Fm]never care \\
+				~[Bb]But to love her [C7]is to meet her \\
+				\{/bridge\}} \\
+			\subsubsection{chorus}
+				Ein Refrain wird mit \{chorus\} oder \{soc\} (start of chorus) am Anfang und mit \{/chorus\}
+				oder \{eoc\} (end of chorus) am Ende markiert. Der Refrain wird auf Farbdruckern in rot 
+				ausgegeben. Die Farbe kann mit der Direktive color\underline{~}chorus  angepasst werden 
+				(siehe Abschnitt namens color\underline{~}xxx).\\
+				Beispiel: \\
+				\\
+				{\bf\{chorus\} \\
+				Oh, I get [C]by with a little [G]help from my [D]friends \\
+				Mm, I get [C]high with a little [G]help from my [D]friends \\
+				Oh, I'm gonna [C]try with a little [G]help from my [D]friends \\
+				\{/chorus\}} \\
+			\subsubsection{instr}
+				Ein Instrumental-Teil wird mit \{instr\} oder \{soi\} (start of instrumental) am Anfang 
+				und \{/instr\} oder \{eoi\} (end of instrumental) am Ende markiert. Der Instrumental-Teil 
+				wird auf Farbdruckern in grau ausgegeben. Die Farbe kann mit der Direktive 
+				color\underline{~}instr angepasst werden (siehe Abschnitt namens color\underline{~}xxx).
+			\subsubsection{np}
+				np steht für eine ''neue Seite'' und erzeugt einen Seitenumbruch.\\
+				Beispiel: \\
+				{\bf\{np\}} \\
+			\subsubsection{tab}
+				Tabulaturen werden mit \{tab\} oder \{sot\} (start of tablature) am Anfang und \{/tab\}
+				oder \{eot\} (end of tablature) am Ende markiert. Tabulaturen werden auf Farbdruckern 
+				in grün ausgegeben. Die Farbe kann mit der Direktive color\underline{~}tab directive 
+				angepasst werden (siehe Abschnitt namens color\underline{~}xxx). Tabulaturen werden 
+				in einer nichtproportionalen Schriftart ausgegeben.\\
+				Beispiel: \\
+				\includegraphics[width=15cm]{pics/tabs1.pdf}
+		\subsection{Fonts}
+			Die Direktiven zur Beeinflussung der Schriftart und -farbe können irgendwo in Ihrer Datei 
+			stehen. Trotzdem ist es hilfreich sie am Anfang zu platzieren. Die angegebenen Werte 
+			gelten für das ganze Dokument.
+			\subsubsection{font\underline{~}size}
+				\LaTeX ~kennt drei Schriftgrößen 10pt, 11pt and 12pt. GuitarTeX nutzt normalerweise 
+				11pt (Titel und Untertitel werden automatisch vergrößert). Wenn Sie z.B. 12pt 
+				verwenden wollen, schreiben Sie:\\
+				\\
+				{\bf\{font\underline{~}size:12\}} \\
+				\\
+				Achtung: schreiben Sie nicht 12pt statt 12!\\
+			\subsubsection{color\underline{~}xxx}
+				Mit den folgenden Direktiven können Sie die Textfarbe für Refrain, Bridge, 
+				Instrumental-Teil Tabulaturen und zweite Stimme anpassen. Für die zweite Stimme 
+				können Sie auch die Hintergrundfarbe ändern, so dass Sie z.B. weiße Schrift auf einem 
+				farbigen Hintergrund verwenden können. Das erleichtert den Sängern hoffentlich 
+				die Orientierung bei mehreren Textzeilen. \\
+				Die Direktiven heißen: \\
+				\begin{itemize}
+					\item
+						color\underline{~}chorus
+					\item
+						color\underline{~}bridge
+					\item
+						color\underline{~}instr
+					\item
+						color\underline{~}tab
+					\item
+						color\underline{~}second
+					\item
+						color\underline{~}second\underline{~}back
+				\end{itemize}
+				Als Parameter wird eine durch Kommas getrennte Liste von Werten zwischen null und 
+				eins, die die Farben rot, grün und blau repräsentieren.\\
+				Beispiel: \\
+				\\
+				{\bf\{color\underline{~}chorus:.5,.5,1\}}
+		\subsection{Gitarren- und Bass-Tabulaturen}
+			$GuitarTeX_2$ kennt zwei neue Direktiven zur Darstellung von Tabulaturen:
+			\begin{itemize}
+				\item
+					\{guitartab: \} für Gitarren-Tabulaturen
+				\item
+					\{basstab: \} für Bass-Tabulaturen
+			\end{itemize}
+			Jede guitartab oder basstab Direktive stellt eine Zeile mit sechs bzw vier Linien dar. 
+			Sie können mit \{guitartab: \} oder \{basstab: \} auch leere Tabulaturen erzeugen. 
+			Setzen Sie eine Leerzeile vor die Direktive, damit die Tabulatur am linken Rand beginnt.\\
+			Die Klammern können enthalten:
+			\begin{itemize}
+				\item
+					normaler Text, der unterhalb der Tabulatur ausgegeben wird
+				\item
+					Noten im Format [string;fret], z.B. [2;5] für 5. Bund auf der A-Saite
+				\item
+					Taktstriche (durch das Zeichen $|$ dargestellt)
+				\item
+					Zusätzlicher Leerraum mit ''\ul{}''
+			\end{itemize}
+			Beispiel: leere Gitarrentabulatur \\
+			\\
+			{\bf\{guitartab:\}} \\
+			\\
+			Beispiel: Eine Bass-Tabulatur mit Text \\
+			\\
+			{\bf\{basstab:some text\}} \\
+			\\
+			Beispiel: Noten, Taktstriche und Leerraum \\
+			\\
+			{\bf\{guitartab:[2;3][3;0][3;2][3;3]$|$[4;0]\ul\ul[4;2]\ul\ul[5;0]\ul\ul[5;1]$|$\}} \\
+			\\
+			Beispiel: Text unter den Noten anordnen \\
+			\\
+			{\bf\{guitartab:[2;3]do [3;0]re [3;2]mi [3;3]fa $|$[4;0]so [4;2]la [5;0]si [5;1]do$|$\}} \\
+			\\
+			Beispiel: Eine einfache Bass-Tabulatur \\
+			\\
+			{\bf\{basstab:[2;5][2;5]$|$[2;5][2;5]$|$[3;5][3;5]$|$[2;5][2;5]$|$[3;7][3;7]$|$[3;5][3;5]$|$[2;5]\}} \\
+			\\
+			Beispiel: Akkorde \\
+			\\
+			{\bf\{guitartab:[2;3]\&[3;5]\&[4;5]C (power chord) $|$[2;3]\&[3;2]\&[4;0]\&[5;1]C chord\}} \\
+		\subsection{N"utzliches}
+			\subsubsection{define}
+				Mit der Direktive define können Sie ein Akkord-Symbol am Ende eines Stückes erstellen. 
+				Die Direktive kann irgendwo im Stück platziert sein.\\
+				define verfügt über acht Parameter:\\
+				\begin{itemize}
+					\item
+						den Akkordnamen
+					\item
+						die Nummer des ersten Bundes
+					\item
+						sechs Nummern für die sechs Saiten (ein x bedeutet, dass die Saite nicht gespielt wird)
+				\end{itemize}
+				Beispiel:\\
+				\\
+				{\bf\{define:A  1 x n 2 2 2 n\} \\
+				\{define:Cm  3 x 1 3 3 2 1\} \\
+				\{define:Gm/Bb   4 3 2 2 1 x x\}} \\
+			\subsubsection{comment}
+				Die Direktive comment fügt einen Text ein, der nicht zum eigentlichen Stück gehört. \\
+				Beispiel: \\
+				\\
+				{\bf\{comment: repeat chorus\} \\
+				\{c: repeat chorus\}} \\
+			\subsubsection{margin}
+				Die Direktive margin erzeugt eine Randbemerkung. Diese können z.B. dazu genutzt werden, 
+				Hinweise für den Musiker einzufügen.\\
+				Beispiel: \\
+				\\
+				{\bf\{margin:Fade Out\} \\
+				\{m:Fade Out\}} \\
+			\subsubsection{second}
+				In einigen Stücken hat die zweite Stimme nicht nur eine andere Melodie, sondern auch 
+				einen anderen oder versetzt gesungenen Text. Bekannte Beispiele sind "California Dreaming" 
+				von The Mamas And The Papas und "Help" von den Beatles. Wenn Sie die zweite Stimme mit 
+				der Direktive second markieren erscheint sie in weißer Schrift auf grauem Hintergrund. 
+				Wegen der proportionalen Schrift müssen Sie ein wenig experimentieren, um die korrekte 
+				Ausrichtung zwischen erster und zweiter Stimme zu erhalten.\\
+				Beispiel: \\
+				\\
+				{\bf[G] When I was younger so much [Hm]younger than today \\
+				\{second:When when I was young\} \\
+				~[Em] I never needed anybody's [C]help in [F]any [G]way \\
+				\{second:I never need help in any way\} \\
+				~[G]But now these days are gone and I'm [Bm]not so self assured \\
+				\{second:Now these days are gone\} \\
+				~[Em] Now I find I've changed my mind, \\
+				\{second:And now I find\} \\
+				I've [C]opened [F]up the [G]doors \\
+				\{second:I've opened up the doors\}} \\
+	\section{\LaTeX-Kommandos und Pakete verwenden}
+		\subsection{\LaTeX-Kommandos}
+			Wie in der Einführung erwähnt, brauchen Sie nichts über \LaTeX ~zu wissen, um $GuitarTeX_2$ 
+			zu nutzen. Wenn Sie sich mit \LaTeX ~auskennen, können Sie dessen Möglichkeiten nutzen, 
+			um Ihre Ergebnisse weiter zu verbessern. Alle Zeilen, die mit einem Backslash beginnen, 
+			werden in die erzeute \LaTeX-Datei übernommen. Sie können das einfach mit einem Kommando 
+			wie diesem testen: \\
+			\\
+			{\bf$\backslash$marginpar\{test\}} \\
+			\\
+			Das Ergebnis ist eine Randbemerkung mit dem Wort ''test''.
+			Die \LaTeX-Kommandos werden an der Stelle ausgeführt, an der sie in der Datei vorkommen. 
+			Manche Kommandos müssen allerdings in der sog. Präambel der \LaTeX-Datei erscheinen. 
+			Das geschieht mit der Direktive preamble:\\
+			\\
+			{\bf\{preamble:$\backslash$usepackage(fancyheadings)\}}\\
+			\\
+			Die Direktive preamble kann irgendwo im Dokument stehen. Die enthaltenen Kommandos 
+			erscheinen in der \LaTeX-Präambel in der Reihenfolge, in der sie in der Chord-Datei stehen.
+				
+			 
+\end{document}

@@ -1,0 +1,52 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: Love Me Tender}
+{subtitle: Elvis Presley}
+
+{define:F#7  2 n 2 n 1 n n}
+{define:D7 t x n n 2 1 2}
+{define:A7  t x n 2 n 2 n}
+{define:E7 t n 2 2 1 3 n}
+{define:G 3 n 2 2 1 n n}
+{define:Gm 3 n 2 2 n n }
+{define:H7 t x 2 1 2 n 2}
+{define:H7 2 x n 2 n 2 n}
+{define:Hm 2 x n 2 2 1 n}
+
+{a:Vers 1:}
+{bridge}
+	L[D]ove me tender, l[E7]ove me sweet; [A7]never let me [D]go.
+	Y[D]ou have made my l[E7]ife complete, [A7]and I love you [D]so.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     L[D]ove me t[F#7]ender, l[Hm]ove me t[D7]rue; [G]all my dr[Gm]eams ful[D]fill.
+     F[D]or my da[H7]rlin', I [E7]love you, [A7]and I always [D]will.
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	[D]Love me tender, l[E7]ove me long; [A7]take me to your [D]heart.
+	[D]For it's there that [E7]I belong, [A7]and we'll never [D]part.
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Vers 3:}
+{bridge}
+	[D]Love me tender, [E7]love me dear; [A7]tell me you are [D]mine.
+	[D]I'll be yours through [E7]all the years, [A7]till the end of [D]time.
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Vers 4:}
+{bridge}
+	[D]When at last my [E7]dreams come true, [A7]darling, this I [D]know:
+	[D]happiness will [E7]follow you, [A7]everywhere you [D]go.
+{/bridge}

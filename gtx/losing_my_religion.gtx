@@ -1,0 +1,41 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: Losing My Religion}
+{subtitle: REM}
+
+
+{a:Intro: F Am F Am-G}
+
+{a:Vers 1:}
+{bridge}
+	Oh, [Am]life is bigger, [Em]it's bigger than you, and you are [Am]not me,
+	the lengths that I will [Em]go to, the distance in your [Am]eyes.
+	[Em]   Oh no, I've said too [Dm]much, I've said eno[G]ugh.
+	That's me in the [Am]corner, that's me in the [Em]spotlight, losing my re[Am]ligion.
+	Trying to [Em]keep up with you, and I [Am]don't know if i can do it.
+	[Em]   Oh no, I've said too [Dm]much, I've said eno[G]ugh.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     I thought that I heard you [F]laughing,
+     I thought that I [G]heard you [Am]sing,
+     I [F]think I thought I saw [G]you [Am - G]try
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	Every [Am]whisper, every waking [Em]hour I'm chosing my conf[Am]ession.
+	Trying to [Em]keep an eye you, like a [Am]hurt lost and blinded fool, fool.
+	[Em]   Oh no, I've said too [Dm]much, I've said eno[G]ugh.
+	Concider [Am]this, consider this, [Em]hint up a century
+	Concider [Am]this, the slip, that [Em]brought me to my knees pale.
+	[Am]What if all these fantasies come [Em] flaming around.
+	Now I've [Dm]said too [G]much
+{/bridge}
+
+{a:Refrain ...}

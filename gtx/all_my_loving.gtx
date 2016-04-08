@@ -1,0 +1,47 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: All My Loving}
+{subtitle: The Beatles}
+
+
+{a:Vers 1:}
+{bridge}
+	Close your [F#m]eyes and I'll [H7]kiss you, Tom[E]orrow I'll [C#m]miss you
+	Rem[A]ember I'll [F#m]always be [D]true
+	And then [F#m]while I'm [H7]away, I'll write [E]home every[C#m]day
+	and I'll [A]send all my [H] to you[E]
+	
+	I'll pre[F#m]tend that I'm ki[H7]ssing the [E]lips I am [C#m]missing
+	and [A]hope that my [F#m]dreams will come [D]true
+	And then [F#m]while I'm [H7]away, I'll write [E]home every[C#m]day
+	and I'll [A]send all my [H] to you[E]
+{/bridge}
+
+
+{a:Refrain:}
+{chorus}
+     All my [C#m]loving, [G#]I will send to [E]you
+     All my [C#m]loving, [G#]darling I'll be [E]true
+{/chorus}
+
+
+{a:Vers 2:}
+{bridge}
+	Close your [F#m]eyes and I'll [H7]kiss you, Tom[E]orrow I'll [C#m]miss you
+	Rem[A]ember I'll [F#m]always be [D]true
+	And then [F#m]while I'm [H7]away, I'll write [E]home every[C#m]day
+	abd I'll [A]send all my [H] to you[E]
+{/bridge}
+
+
+{a:Refrain:}
+{chorus}
+     All my [C#m]loving, [G#]I will send to [E]you
+     All my [C#m]loving, [G#]darling I'll be [E]true
+     All my [C#m]loving, [G#]All my loving [E]  Ooh
+     All my [C#m]loving, [G#]I will send to [E]you
+{/chorus}

@@ -1,0 +1,39 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{title: The Man Who Sold The World}
+{subtitle: Chords by Nirvana}
+
+
+{a:Intro: Dm A Dm}
+
+{a:Vers 1:}
+{bridge}
+	[Dm]We passed upon the [A] stair, we spoke of was and [Dm]when
+	[Dm]Although I wasn't [A]there, he said I was his [F]friend
+	[F]which came as some surp[C]rise I spoke into his [A]eyes
+	[A]I thought you died [Dm]alone, a long long time [C]ago
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [C]Oh no, not [F]me
+     I [B]never lost [F]control
+     [F]You're [C]face to [F]face
+     [F]With The [B]Man Who Sold The [A]World
+{/chorus}
+
+{a:Zwischenspiel: A Dm A Dm}
+
+{a:Vers 2:}
+{bridge}
+	I [Dm]laughed and shook his h[A]and, and made my way back h[Dm]ome
+	I [Dm]searched for form and l[A]and, for years and years I ro[F]amed
+	I [F]gazed a gazley st[C]are at all the millions h[A]ere
+	We [A]must have died along, a l[Dm]ong long time ag[C]o
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Zwischenspiel: A Dm A Dm F Dm A Dm}

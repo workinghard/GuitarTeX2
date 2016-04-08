@@ -1,0 +1,47 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: What A Wonderful World}
+{subtitle: Louis Armstrong}
+
+{define:C7 3 x n 2 n 2 n}
+{define:C# 4 x n 2 2 2 n}
+{define:D# 6 x n 2 2 2 n}
+{define:Gm7 t f1p3 p5 f1p3 f1p3 f1p3 f1p3}
+
+{a:Vers 1:}
+{bridge}
+	I see [F]trees of [Am]green, [B]red roses [Am]too,
+	[Gm7]I see them [F]bloom [A7]for me an [Dm]you,
+	and I [C#]think to my - self:
+	[Gm7]  What a [C7]wonderful [F]world! [F7] [B]
+{/bridge}
+
+{a:Vers 2:}
+{bridge}
+	[C7]  I see [F]skies of [Am]blue, [B]and clouds of [Am]white,
+	[Gm7]the bright blessed [F]day, [A7]the dark sacred [Dm]night,
+	and I [C#]think to my - self :
+	[Gm7]  What a [C7]wonderful [F]world [Gm] [F]
+{/bridge}
+
+{a:Vers 3:}
+{bridge}
+	The [Gm7] colours of the [C7]rainbow, so [F]pretty in the sky,
+	Are [Gm7] also on the [C7]faces of [F]people goin' by.
+	I see [Dm]friends shakin' [Am]hands, sayin [Dm]"How do you [C]do?"
+	[Dm] They're really [D7]sayin': "[Gm7]I love [C7]you"
+{/bridge}
+
+{a:Vers 4:}
+{bridge}
+	I here [F]babies [Am]cry, [B]I watch them [Am]grow
+	[Gm7]they'll learn much [F]more than [A7]I'll ever [Dm]know,
+	and I [C#]think to my - self:
+	[Gm7]  What a [C7]wonderful [F]world! [D#] [D7]
+	Yes, I [Gm7]think to myself:
+	[B]  What a [C7]wonderful [F]world! [Gm7] [F]
+{/bridge}

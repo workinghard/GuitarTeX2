@@ -1,0 +1,44 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: Knocking On Heavens Door}
+{subtitle: Bob Dylan}
+
+{define:Am7  t x n 2 n 1 n} 
+
+{a:Intro:	G D Am7 Am7 G D C C}
+
+{a:Vers 1:}
+{bridge}
+	[G]Mama, [D]take this badge from [Am7]me
+	[G]I can' [D]use it any[C]more
+	[G]it's getting [D]dark, too dark to [Am7]see
+	[G]it feels like I'm [D]knocking on heaven's [C]door
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [G]Knock, knock, [D]knocking on heaven's [Am7]door - 
+     [G] knock, knock, [D]knocking on heaven's [C]door
+     [G]Knock, knock, [D]knocking on heaven's [Am7]door - 
+     [G] knock, knock, [D]knocking on heaven's [C]door
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	[G]Mama, [D]put my guns in the [Am7]ground
+	[G]I can't [D]shoot them any[C]more
+	[G]That cold, black [D]cloud is comming [Am7]down
+	[G]it feels like I'm [D]knocking on heaven's [C]door
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [G]Knock, knock, [D]knocking on heaven's [Am7]door - 
+     [G] knock, knock, [D]knocking on heaven's [C]door
+     [G]Knock, knock, [D]knocking on heaven's [Am7]door - 
+     [G] knock, knock, [D]knocking on heaven's [C]door
+{/chorus}

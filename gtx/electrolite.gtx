@@ -1,0 +1,81 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{even}
+{title: Electrolite}
+{subtitle: REM}
+
+{define:Cadd9  t x 3 2 n 3 3}
+{define:G  t 3 2 n n 3 3} 
+
+{a:Vers 1:}
+{bridge}
+	[G]Your eyes are [Cadd9]burning holes through [G]me. [Cadd9]
+	I'm gaso[G]line. [Cadd9]
+	I'm burnin' [G]clean. [Cadd9]
+
+	[G]Twentieth [Caddd9]Century go to [G]sleep [Cadd9]
+	You're plasti[G]cine. [Cadd9]
+	That is obs[G]cene. [Cadd9]
+	That is obs[D]cene.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     You [Am]are the star ton[D]ight.
+     Your sun [Am]electric, outta [D]sight.
+     Your light ecli[H]psed the moon [Em]tonight.
+     [G-Am] Elecro[Em]lite. [G-Am] You're outa [Em]sight. [G-D]
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	[G]If I [Cadd9]ever want to [G]fly. [Cadd9]
+	Mulholland [G]Drive. [Cadd9]
+	I am [G]alive. [Cadd9]
+
+	[G]Holly[Cadd9]wood is under [G]me. [Cadd9]
+	I'm Martin [G]Sheen [Cadd9]
+	I'm Steve [G]McQueen [Cadd9]
+	I'm Jimmy [D]Dean
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Mittelteil: H Am H Am H Am C D}
+
+{np}
+
+{a:Vers 3:}
+{bridge}
+	[G]If you [Cadd9]want to [G]fly. [Cadd9]
+	Mulholland [G]Drive. [Cadd9]
+	Up in the [G]sky. [Cadd9]
+
+	[G]Stand on a [Cadd9]cliff and look down [G]there. [Cadd9]
+	Don't be [G]scared. [Cadd9]
+	You are [G]alive. [Cadd9]
+	You are [D]alive.
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Vers 4:}
+{bridge}
+	[G]Twentieth [Cadd9]century go and [G]sleep [Cadd9]
+	Really [G]deep [Cadd9]
+	We won't [G]blink [Cadd9]
+	[G]You're eyes are [Cadd9]burnin' holes through [G]me. [Cadd9]
+	I'm not [G]scared [Cadd9]
+	I'm outa [G]here. [Cadd9]
+	I'm not [G]scared.
+	I'm outa here.
+{/bridge}
+
+\footnotesize
+{a:Zwischenspiel:}
+{guitartab: [14.5ex;D]&[6;3][6;2][6;3][5;3] }
+\normalsize

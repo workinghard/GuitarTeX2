@@ -1,0 +1,46 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: Country Roads}
+{subtitle: John Denver}
+
+{a:Vers 1:}
+{bridge}
+[G]Almost heaven, [Em]west virginia [D]Blue ridge mountains [C]Shenandoah [G]river -
+[G]Life is old there [Em]Older than the trees
+[D]Younger than the mountains [C]Growin like a [G]breeze
+{/bridge}
+
+
+{a:Refrain:}
+{chorus}
+   [G]Country roads, take me [D]home  To the [Em]place I [C]belong
+   West [G]virginia, mountain [D]momma
+   Take me [C]home, country [G]roads
+{/chorus}
+
+{a:Vers: 2}
+{bridge}
+[G]All my memories [Em]gathered round her
+[D]Miners lady, [C]stranger to blue [G]water
+[G]Dark and dusty, [Em]painted on the sky
+[D]Misty taste of moonshine
+[C]Teardrops in my [G]eye
+{/bridge}
+
+{a:Refrain: ...}
+
+{a:Vers: 3}
+
+{bridge}
+[Em]I hear her [D]voice
+In the [G]mornin hour she calls me
+[C]The radio [G]reminds me of [D]my home far away
+[Em]And drivin down [F]the road I get a [C]feelin
+[G]That I should have been home [D]yesterday, [D7]yesterday
+{/bridge}
+
+{a:Refrain: ...}

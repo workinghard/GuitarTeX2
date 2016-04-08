@@ -1,0 +1,40 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: Stand By Me}
+{subtitle: Ben E.King}
+
+{a:Intro: A F#m D E A}
+
+{a:Vers 1:}
+{bridge}
+	When the [A]night has come, [F#m]and the land is dark
+	And the [D]moon is the [E]only light we will [A]see
+	[A]No, I'won't be afraid, oh, [F#m]I won't be afraid
+	Just as [D]long as you [E]stand, stand by [A]me
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [A]So darlin', darlin' stand by me
+     Oh [F#m]stand by me
+     Oh [D]stand, [E]stand by me, stand by [A]me
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	If the [A]sky that we look upon [F#m]should tumble and fall
+	Or the [D]mountains should [E]crumble to the [A]sea
+	[A]I won't cry, I won't cry, no, [F#m]I won't shed a tear
+	Just as [D]long as you [E]stand, stand by [A]me.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [A]And dalin', darlin' stand by me
+     Oh [F#m]stand by me
+     Oh [D]stand, [E]stand by me, stand by [A]me
+{/chorus}

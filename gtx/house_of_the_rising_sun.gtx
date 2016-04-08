@@ -1,0 +1,45 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_bridge:0,0,0}
+
+{title: House Of The Rising Sun}
+{subtitle: The Animals}
+
+{a:Vorspiel: Am C D F Am C E E}
+
+{bridge}
+	[Am]There is a [C]house in [D]New Orl[F]eans,
+	[Am]They call the [C]Rising [E]Sun  [E]
+	And It's b[Am]een the [C]ruin of [D]many a poor [F]boy
+	[Am]And God, I [E]know, I'm [Am]one  [C] [D] [F] [Am] [E] [Am] [E]
+{/bridge}
+
+{chorus}
+	My mother was a tailor
+	She sewed my new blue jeans
+	My father was a gambling man
+	Down in New Orleans
+{/chorus}
+
+{bridge}
+	And the only things a gambler needs
+	Is a suitcase and a trunk
+	And the only time he's satisfied
+	Is when he's all a-drunk
+{/bridge}
+
+{chorus}
+	I've got one foot on the platform
+	The other foot on the train
+	I'm going back to New Orleans
+	To wear the ball and chain
+{/chorus}
+
+{bridge}
+	So mothers, tell your children
+	Not to do what I have done
+	Spend your life in sin and misery
+	In the house of the Rising Sun
+{/bridge}

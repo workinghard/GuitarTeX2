@@ -1,0 +1,45 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: Creep}
+{subtitle: Radiohead}
+
+{define:Asus4  t x n 2 2 3 n}
+{define:Esus  t n 2 2 2 n n} 
+{define:G#sus 4 n n 2 2 n n}
+
+{a:Capo: 3}
+
+{a:Intro: E Esus E G# G#sus G# A Asus4 A}
+
+{a:Vers 1:}
+{bridge}
+	[Am]When you were here b[E]efore [Esus]
+	[E]Couldn't look you in the e[G#]yes  [G#sus]
+	[G#]Just look like an [A]angel  [Asus4]
+	[A]Your skin makes me [Am]cry  [Asus4]
+	\\
+	[Am]You float like a [E]feather   [Esus]
+	[E]In a beautiful [G#]weather  [G#sus]
+	[G#]I wish I was [A]special  [Asus4]
+	[A]You're so very [Am]special  [Asus4]
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [Am]But I'm a [E]creep  [Esus], [E]I'm a wi[G#]erdo  [G#sus]
+     [G#]What the hell am I doin' [A]here  [Asus4] , [A]I don't belong [Am]here  [Asus4]
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	I don't care if it hurts, I wanna have control
+	I wanna perfect body, I want a perfect soul
+	I want you to notice, When I'm not around
+	You're so very special , I wish I was special
+{/bridge}
+
+{a:Refrain ...}

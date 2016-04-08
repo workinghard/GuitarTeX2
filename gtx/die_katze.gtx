@@ -1,0 +1,48 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{language: german}
+
+{color_chorus:0,0,0}
+
+{title: Die Katze}
+{subtitle: Annett Louisan}
+
+{define:G/Am  t 3 n 2 2 1 n}
+{define:F#/D  t 2 n n 2 3 n} 
+{define:C     3 x n 2 2 2 n}
+
+{a:Vers 1:}
+{bridge}
+[Am]Du hast sie gefunden, [F]jetzt liegt es bei [E]dir
+[Am]dich um sie zu kümmern, wer weiß vielleicht [F]schnurrt sie [E]dafür.
+[Am]Sie kommt und sie geht, [F]wann immer sie [E]will
+[C]  Sie räkelt sich in deinen Laken aus    [E7]weichem Flanell
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [Am]Sie spielt mit der Beute, zieht nie mit der Meute sie [F]kuscht [E]nicht
+     [Am]Sie zählt deine Mäuse sie mordet sie leise und [F] [E]gründlich
+     [Dm]Nein, sie wird dir nie [E7]gehörn
+     [Am]doch du streichelst [G/Am]sie so [F#/D] gern
+     [F]Das weiß sie ganz [E]genau, [Am]miau
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+[Am]Sie krallt sich dein Kissen,  [F]und thront [E]arrogant
+[Am]Sie frißt dir die Haare vom Kopf, aber [F]nie aus der [E]Hand
+[Am]Willst du sie dir greifen faucht sie, [F]rühr mich nicht [E]an
+[C]  Hast du absolut keine Zeit für sie, [E7]schleicht sie sich an
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [Am]Sie fällt auf die Pfoten, sie spielt nicht nach Noten, sie [F]sträubt [E]sich 
+     [Am]Du kannst sie nicht führen und auch nicht dressiern, [F]sie spurt [Am]nicht 
+     [Dm]Nein, sie wird dir nie [E7]gehörn
+     [Am]doch du streichelst [G/Am]sie so [F#/D]gern
+     [F]Das weiß sie ganz [E]genau, [Am]miau
+{/chorus}

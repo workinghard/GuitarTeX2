@@ -1,0 +1,45 @@
+{title: Somewhere over the Rainbow}
+{subtitle: Eric Clapton}
+{define:C#9  2   x 2 1 2 2 2}
+{define:F#m7 2   n 2 n n n n}
+{define:B9   t   x 2 1 2 2 2}
+{define:C#m7 4   x n 2 n 1 n}
+{define:G#m7 4   n 2 n n n n}
+{define:Ebm7 6   x n 2 n 1 n}
+{define:Eaug 5   x 2 1 n n x}
+{define:A    5   n 2 2 1 n n}
+{define:Eb7  3   x 3 2 3 1 x}
+{define:D9   3   x 2 1 2 2 2}
+{define:Bbm7 6   n 2 n n n n}
+{define:Eb9  4   x 2 1 2 2 2}
+
+{a: Intro: E  C#9  F#m7  B9}
+
+{a: Vers: 1}
+{bridge}
+[E]Some[C#m7]where [G#m7]over the [Ebm7]rain [Eaug]bow    [A]Way  [Eb7]Up   [G#m7]High [C#9]
+[F#m7]Theres [D9]a   [G#m7]land that I've [C#9]heard of [F#m7]once in a [H9]lulla[E]by [A] [H] 
+[E]Some[C#m7]where [G#m7]over the [Ebm7]rain [Eaug]bow    [A]Skies [Eb7]are  [G#m7]blue [C#9]
+[F#m7]and  [D9]the  [G#m7]dreams that you [C#9]dare to [F#m7]dream really [H9]do come [E]true 
+{/bridge}
+
+{a: Vers: 2}
+{chorus}
+Some [E]day I'll wish upon a star and 
+[F#m7]wake up where the [H9]clouds are far be[G#m7]hind  [C#9]me [F#m7] [H9]                             
+Where [E]troubles melt like lemon drops
+[Bm7]Away above the [Eb9]chimney tops
+That's [G#m7]where [C#9]you'll [F#m7]find  [H9]me
+{/chorus}
+
+{a: Vers: 3}
+{bridge}
+[E]Some[C#m7]where [G#m7]over the [Ebm7]rain [Eaug]bow  [A]blue [Eb7]birds [G#m7]fly [C#9]
+[F#m7]Birds  [D7]fly [G#m7]over the [C#9]rainbow
+[F#m7]Why then, oh [H9]why can't [G#m7]I  [C#9]?
+[F#m7]Birds  [D7]fly [G#m7]over the [C#9]rainbow
+[F#m7]Why then, oh [H9]why can't [E]I?
+If [E]happy little bluebirds fly [F#m7]beyond the rainbow
+[H9]Why, oh, why can't [E]I? [C#9] [F#m7] [H9]
+[E]repeat [C#9] [F#m7] [H9]
+{/bridge}

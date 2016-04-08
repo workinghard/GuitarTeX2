@@ -1,0 +1,88 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{even}
+{title: Sitting, Waiting, Wishing}
+{subtitle: Jack Johnson}
+
+{define:Am   5 n 2 2 n n n}
+{define:Am7  5 n 2 n n n n}
+{define:G    3 n 2 2 1 n n}
+{define:G7   3 n 2 n 1 n n}
+{define:F7   1 n 2 n 1 n n}
+{define:C    3 n n 2 2 2 n} 
+{define:C7   3 n n 2 n 2 n}
+
+{a:Intro: Am Am7 G G7 F F7 C C7}
+
+{a:Vers 1:}
+{bridge}
+	Well [Am]I was sitting, [Am7]waiting, wishing
+	[G]You believed in [G7]superstitions
+	[F]Then maybe you'd [F7]see the [C]signs [C7]
+	\\
+	The [Am]Lord knows that this [Am7]world is cruel
+	I [G]ain't the Lord, I'm [G7]just a fool
+	and in [F]love with somebody [F7]don't make them love [C]you [C7]
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Must I [E]always be waiting, waiting on [Am]you [Am7] [Am] [Am7]
+     Must I [E]always be playing, playing your [Am]fool [Am7] [Am] [Am7]
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	I [Am]sang your songs, I [Am7]danced your dance
+	I [G]gave your friends [G7]all a chance
+	[F]Putting up with them [F7]wasn't worth ever having [C]you [C7]
+	\\
+	[Am]Maybe you've been through [Am7]this before
+	But it's [G]my first time so [G7]please ignore
+	These [F]next few lines because [F7]they're directed at [C]you [C7]
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     I [E]can't always be waiting, waiting on [Am]you [Am7] [Am] [Am7] [Am]
+     I [E]can't always be playing, playing your [Am]fool [Am7] [Am] [Am7] [Am]
+{/chorus}
+
+{np}
+
+{a:Mittelteil:}
+{chorus}
+     [C]   I keep playing your [E]part
+     But it's not my [F]scene
+     Want this part to [G]twist
+     I've had enough [C]mystery
+     Keep building it [E]up
+     Then shooting me [F]down
+     But I'm already [G]down, Just wait a [Am]minute [Am7]
+     [G]  [G7]Just sitting, [F]waiting [F7] [C]
+     [C7]Just wait a [Am]minute [Am7]
+     [G]  [G7]Just sitting, [F]waiting [F7] [C] [C7]
+{/chorus}
+
+{a:Vers 3:}
+{bridge}
+	Well [Am]if I was in [Am7]your position
+	I'd [G]put down all my [G7]amunition
+	I'd [F]wonder why it [F7]had taken me so [C]long [C7]
+
+	But [Am]the lord knows that [Am7]I'm not you
+	and [G]if I was I wouldn't [G7]be so cruel
+	cause [F]waitin' on love ain't [F7]so easy to [C]do [C7]
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Must I always be waiting, waiting on you
+     Must I always be playing, playing your fool
+     I can't always be waiting, waiting on you
+     I can't always be playing, playing your fool
+{/chorus}

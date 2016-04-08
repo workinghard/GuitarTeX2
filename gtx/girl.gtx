@@ -1,0 +1,71 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{even}
+{title: Girl}
+{subtitle: The Beatles}
+
+{define:Em7  t n 2 2 n 3 n}
+{define:C6  t x 3 2 2 1 n} 
+
+{a:Capo: 8}
+
+{a:Vers 1:}
+{bridge}
+	Is there [Em]anybody [H7]going to listen [Em]to my [Em7]story [Em]
+	[Am]All about a [C6]girl who came to [G]stay [H7]
+	She's the [Em]kind of girl you [H7]want so much it [Em]makes you [Em7]sorry [Em]
+	[Am]Still you don't [C6]regret a single [Em]day
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Ah, [G]girl[Hm]  [Am]  [D7]  [G]girl[Hm] [Am] [D7]
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	When I [Em]think of all the [H7]times I've tried so [Em]hard to [Em7]leave her [Em]
+	[Am]She will turn to [C6]me and start to [G]cry [H7]
+	And she [Em]promises the [H7]earth to me and [Em]I believe[Em7] her [Em]
+	[Am]After all this [C6]time I don't know [Em]why
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Ah, [G]girl[Hm]  [Am]  [D7]  [G]girl[Hm] [Am] [D7]
+{/chorus}
+
+{a:Mittelteil:}
+{chorus}
+     [Am]She's the kind of girl who puts you [E]down
+     when friends are there, you feel a [Am]fool  [E]
+     [Am]When you say she's looking good
+     She [E]acts as if it's  understood she's [Am]cool [C]
+{/chorus}
+
+{a:Refrain:}
+{chorus}
+     Ah, [G]girl[Hm]  [Am]  [D7]  [G]girl[Hm] [Am] [D7]
+{/chorus}
+
+{np}
+
+{a:Vers 3:}
+{bridge}
+	Was she [Em]told when she was [H7]young 
+	That fame would [Em]lead to [Em7]pleasure? [Em]
+	[Am]Did she under[C6]stand it when they [G]said [H7]
+	That a [Em]man must break his [H7]back
+	To earn his [Em]day of [Em7]leisure? [Em]
+	[Am]Will she still [C6]believe it when [Em]he's dead?
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Ah, [G]girl[Hm]  [Am]  [D7]  [G]girl[Hm] [Am] [D7]
+{/chorus}
+

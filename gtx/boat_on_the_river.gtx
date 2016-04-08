@@ -1,0 +1,43 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: Boat On The River}
+{subtitle: Styx}
+
+{a:Vers 1:}
+{bridge}
+	[Dm]Take me down to my boat on the river
+	I [C]need to go down, I [A7]need to come down
+	[Dm]Take me back to my boat on the river
+	And [C]I won't cry [A7]out any[Dm]more
+{/bridge}
+
+{a:Vers 2:}
+{bridge}
+	[Dm]Time stands still as I gaze in her waters
+	She [C]eases me down, [A7]touching me gently
+	With the [Dm]waters that flow past my boat on the river
+	So [C]I won't cry [A7]out any[Dm]more
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Oh the [C]river is wide, The [A7]river it touches my [Dm]life
+     like the waves on the [G]sand. And [Gm]all roads lead to [Dm]tranquility base
+     Where the [E]frown on my face dis[A]appears[A7]
+     [Dm]Take me back to my boat on the river. And [C]I won't cry [A7]out any[Dm]more  
+{/chorus}
+
+{a:Refrain:}
+{chorus}
+     Oh the [C]river is deep, The [A7]river it touches my [Dm]life
+     like the waves on the [G]sand. And [Gm]all roads lead to [Dm]tranquility base
+     Where the [E]frown on my face dis[A]appears[A7]
+     [Dm]Take me back to my boat on the river
+     And [C]I won't cry [A7]out [Dm]anymore
+     And [C]I won't cry [A7]out [Dm]anymore
+     And [A]I won't cry [A7]out [Dm]anymore
+{/chorus}

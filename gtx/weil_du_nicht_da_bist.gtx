@@ -1,0 +1,43 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+{language: german}
+{color_chorus:0,0,0}
+
+{even}
+{title: Weil Du Nicht Da Bist}
+{subtitle: Element Of Crime}
+
+{a:Intro: H7 Em D7 G H7}
+
+{bridge}
+  \textbf{\textit{Vers 1:}} \\
+  \\
+  Auf dem [H7]Gerüst vor unserem Fenster kommt kein [Em]Maurer mehr vorbei.
+  Das [D7]Bett wird immer größer und [G]das Bad ist immer frei.
+  Der blöde [Am]Hund, der mich sonst jeden Tag [G]verbellt
+  liegt [H7]nur noch stumpf im Gras und glotzt mit leeren [C]Augen in die Welt.
+  Weil du nicht [G]da bist, weil du nicht [Am]da bist. [H7]
+{/bridge}
+
+{bridge}
+  \textbf{\textit{Vers 2:}} \\
+  \\
+  Ein [H7]Vogel, der nur Körner frißt macht [Em]Regenwürmer kalt.
+  Im [D7]Bus, der nur noch stündlich kommt sind [G]alle angeschnallt.
+  Die alte [Am]Frau, die mich sonst jeden morgen [G]grüßt
+  kennt [H7]mich nicht mehr und tut, als ob sie [C]Groschenheft liest.
+  Weil du nicht [G]da bist, weil du nicht [Am]da bist. [H7]
+  [Em D7 G Am G H7]
+{/bridge}
+
+
+{bridge}
+  \textbf{\textit{Vers 3:}} \\
+  \\
+  Vom [H7]Nachbarn kommt musik nach der schon [Em]lang kein Hahn mehr kräht.
+  Eine [D7]Maus holt sich ihr Nachtmahl und auf [G]meinem Nachttisch steht
+  ein [Am]Schokoladenhase, traurig und [G]allein.
+  Ich [H7]weiß ihm nicht zu helfen, und [C]stopf ihn in mich rein.
+  Weil du nicht [G]da bist, weil du nicht [Am]da bist. [H7]
+{/bridge}

@@ -1,0 +1,44 @@
+{title: Die Loesung}
+{subtitle: Annett Louisan}
+
+{define:Am/C  t  x 3 2 2 1 n}
+{define:Dm6   t  x 2 n 2 3 1}
+{define:E7    t  n 2 2 1 3 n}
+{define:Em/G  t  3 2 2 n n n}
+{define:Am/F# t  2 x x 2 1 n}
+{define:H7    t  x 2 1 2 n 2}
+
+{language: german}
+
+{a: Vers: 1}
+{bridge}
+[Am]Ich hab' da [Am/C]so'n [Dm6]Problem, das kümmert [E7]mich ext[Am]rem 
+Es ziert mich [Am/C]wie ein [Dm6]Tier, dass ich spa[E7]zieren [Am]führ' 
+Es macht mich [Am/C]int'ress[Dm6]ant, die Leute [E7]sind ge[Am]spannt 
+Was ist mit [Am/C]dem Pro[Dm6]blem? Wie wird es [E7]weiterg[Em]eh'n? 
+Ich brauche [E/G]mein Pro[Am/F#]blem um ander'n [H7]zu ent[Em]geh'n 
+Ich pack's [Em/G]genüßlich [Am/F#]aus und red' mich [H7]damit [Em]raus 
+Ich schildere es [E/G]farben[Am/F#]reich und alle [H7]rufen [Em]gleich 
+"was macht die [Am/F#]Arme bloß [G]durch?!" 
+{/bridge}
+
+{a: Refrain: }
+{chorus}
+Geh' mir weg mit deiner [Dm]Lö[G7]sung,[Dm] sie wär' der [G7]Tod für mein [C]Problem 
+jetzt laß' mich weiter d'rüber [Dm]re[G7]den,[Dm] is' schließlich [G7]mein Pro[C]blem [F] [E] 
+und nicht dein Problem [Am]
+{/chorus}
+
+{a: Vers: 2}
+{bridge}
+Ich spür' da so 'nen Schmerz im Kopf und auch im Herz 
+Darüber klag' ich leis' wenn ich nicht weiter weiß 
+Ich hüll' mich in mein Leid wie in ein langes Kleid 
+und alle schauen her, "oh je, sie leidet sehr" 
+Ich klage meinen Schmerz ganz traurig himmelwärts 
+Verweine mein Gesicht bevor man mich erwischt 
+Wie ich gerade lüg' und jemanden betrüg' 
+das ist ein guter Trick 
+{/bridge}
+
+{a: Refrain: ...}

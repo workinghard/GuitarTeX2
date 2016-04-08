@@ -1,0 +1,67 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{even}
+{title: Sorry Seems To Be The Hardest Word}
+{subtitle: Elton John}
+
+{define:Am7   t x n 2 n 1 n} 
+{define:D/F#  t 2 n n 2 3 2}
+{define:C/E   t n 3 2 n 1 n}
+{define:G/D   t x x n n 2 2}
+{define:Am7/C t x 3 2 n 1 n}
+{define:F#m7  2 n 2 n n 3 n}
+
+{a:Capo: 3. Bund}
+{a:Intro: Em Em6 Em5 Em Am C H7 Em}
+{a:Vers 1:}
+{bridge}
+	[Em]What I gotta do to make you [Am7]love me?
+	[D]What I gotta do to make you [G]care? [Am] [H7]
+	[Em]What do I do when lightning [Am7]strikes me?
+	[D]And I wake to find that you're not [G]there [Am] [H7]
+{/bridge}
+
+{a:Vers 2:}
+{bridge}
+	[Em]What do I do to make you [Am7]want me?
+	[D]What I gotta do to be [G]heard? [Am] [H7]
+	[Em]What do I say when it's all [Am7]over?
+	[D]Sorry seems to be the hardest [G]word [D/F#]
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [C/E]It's sad, [H7]so sad
+     [G/D]It's a sad sad [A7]situation
+     [Am7/C]And it's getting [H7]more and more ab[Em]surd [F#m7] [H7]
+     [C/E]It's sad, [H7]so sad
+     [G/D]Why can't we [A7]talk it over
+     [C]Oh it seems to me,
+     [Am7]That sorry seems to [H7]be the hardest [Em]word
+{/chorus}
+
+{a:Vers 3:}
+{bridge}
+	[Em]What do I do to make you [Am7]want me?
+	[D]What I gotta do to be [G]heard? [Am] [H7]
+	[Em]What do I say when it's all [Am7]over?
+	[D]Sorry seems to be the hardest [G]word [D/F#]
+{/bridge}
+
+{np}
+
+{a:Refrain ...}
+
+{a:Vers4:}
+{bridge}
+	[Em]What do I do to make you [Am7]love me?
+	[D7]What I gotta do to be [G]heard? [Am] [H7]
+	[Em]What do I do when lightning [Am7]strikes me?
+	[C]What have I got to [H7]do?
+	[Em]What have I got to [Am7]do?
+	[C]Sorry seems to be the [H7]be the hardest [Em]word [Em6] [Em5] [Em] [Am] [H7] [Em]
+{/bridge}

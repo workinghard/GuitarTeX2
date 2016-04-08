@@ -1,0 +1,42 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{language: german}
+
+{color_chorus:0,0,0}
+
+{title: Griechischer Wein}
+
+{a:Vers 1:}
+{bridge}
+	[Am]Es war schon dunkel, als ich durch Vorstadtstrassen [(Am]heimw[F)]ärts gin[C]g.
+	Da war ein Wirtshaus, aus dem das Licht noch auf den [(C]Gehs[F)]teig sch[G7]ien.
+	[E7]Ich hatte [Am]Zeit, und mir war [E7]kalt, drum trat ich [Am]ein.
+	\\
+	[Am]Da sassen Männer mit braunen Augen und mit [(Am]schwarz[F)]em Ha[C]ar.
+	Und aus der Jukebox erklang Musik, die fremd und [(C]süd[F)]lich wa[G7]r.
+	[E7]Als man mich [Am]sah, stand einer [E7]auf und lud mich [Am]ein.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [F]Griechischer Wein ist wie das Blut der Erde,
+     k[C]omm, schenk' dir ein, und wenn ich dann traurig werde,
+     li[G7]egt es daran, dass ich immer träume von da[C]heim, du musst verz[C7]eih'n.
+     G[F]riechischer Wein und die altvertrauten Lieder,
+     s[C]chenk nochmal ein, denn ich fühl die Sehnsucht wieder,
+     in[G7] dieser Stadt werd'ich immer nur ein [E7]Fremder [Am]sein [E7]und a[Am]llein.
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	Und dann er[Am]z"ahlten sie mir von gr"unen Hügeln, M[(Am]eer [F)]und Wi[C]nd,
+	von alten Häusern und jungen Frauen, die [(C]allei[F)]ne s[G7]ind,
+	[E7]und von dem K[Am]ind, das seinen V[E7]ater noch nie s[Am]ah.
+	Si[Am]e sagten sich immer wieder, irgendwann [(Am]geht [F)]es zur[C]ück,
+	und das Ersparte genügt zu Hause für ein [(C]klein[F)]es Glü[G7]ck.
+	[E7]Und bald denkt ke[Am]iner mehr dar[E7]an, wie es hier [Am]war.
+{/bridge}
+
+{a:Refrain ...}

@@ -1,0 +1,36 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: Venus}
+{subtitle: Shocking Blue}
+
+{define:B7sus4 7  n  2 n 2 n n} 
+
+{a:Vers 1:}
+{bridge}
+	A [Em]goddess on a [A]mountain [Em]top  [A]
+	[Em]burning like a [A]silver [Em]flame,  [A]
+	[Em]Summit of [A]beauty and [Em]love, [A]
+	and [Em]Venus was her [A]name. [Em] (Zwischenspiel)
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     She's [Am]got it, [D] [Am] yeah bab[D]y, she's [Em]got it. [A] [Em] [A]
+     [C7]I'm your Venus, [H7]I'm your fire at [Em] your desire. [A] [Em] [A]
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	Her weapons are her crystal eyes
+	making every man mad.
+	Black as the dark night she was,
+	got what no one else had. (Zwischenspiel)
+{/bridge}
+
+{a:Refrain ...}
+{a:Zwischenspiel:}
+{guitartab: [1;0][1;0][1;3][2;0][2;2][2;2][2;0][1;3] }

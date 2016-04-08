@@ -1,0 +1,76 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+{language: german}
+{color_chorus:0,0,0}
+
+{even}
+{title: Ph"anomenal Egal}
+{subtitle: Farin Urlaub}
+
+{define:Asus2  t x n 2 2 n n}
+{define:E5  t n 2 2 1 1 n} 
+{define:E6  t n 2 2 1 2 n}
+{define:E7  t n 2 2 1 3 n}
+
+{a:Vers 1:}
+{bridge}
+	[E]Zwar lieg ich [F#m]Nachts [A]stundenlang [H]wach und denk an [E]dich, [F#m]
+	doch in [A]Wirklichkeit [H]lieb ich dich [E]nicht.
+	Zwar gibt es [F#m]keine sch"onere [A]Frau auf der [H]ganzen Welt f"ur [E]mich, [F#m]
+	doch in [A]Wirklichkeit [H]lieb ich dich [C#m]nicht.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Eigentlich [H]bist du mir [A]egal, [Asus2] [A]
+     [C#m]eigentlich [H]bist du nicht mein [A]Typ [Asus2] [A]
+     und auf [C#m]jeden [H]Fall bin ich [A]gar nicht in [H]dich verlie[E]bt.
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	Ich steh zwar [F#m]ab und zu [A]einfach nur [H]so an deiner [E]T"ur,
+	[F#m]doch im [A]Prinzip will ich [H]gar nichts von [E]dir.
+	Dein [F#m]Foto h"angt [A]wirklich nur [H]zuf"allig [E]hier, [F#m]
+	im [A]Prinzip will ich [H]gar nichts von [C#m]dir.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Eigentlich [H]bist du mir [A]egal, [Asus2] [A]
+     [C#m]eigentlich [H]bist du nicht mein [A]Typ [Asus2] [A]
+     und auf [C#m]jeden [H]Fall bin ich [A]gar nicht in [H]dich verlie[E]bt.
+{/chorus}
+
+{a:Mittelteil:}
+{chorus}
+     [E]Du bist nur [E5]Luft f"ur mich ganz [E6]unwichtig, [E7]total banal, 
+     [A]ich nehm dich gar nicht [Am]wahr.
+     Du bist [F#m]mir [G#m]einfach [A]ph"anome[H]nal [E]egal
+{/chorus}
+
+{np}
+
+{a:Vers 3:}
+{bridge}
+	Ich muss es [F#m]dir gestehen, [A]selbst wenn dein [H]Herz daran [E]zerbricht, [F#m]
+	in [A]Wirklichkeit [H]lieb ich dich [E]nicht.
+	Du hast so [F#m]sch"one Augen [A]und ein noch [H]sch"oneres [E]Gesicht, [F#m]
+	in [A]Wirklichkeit [H]lieb ich dich [C#m]nicht.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Eigentlich [H]bist du mir [A]egal, [Asus2] [A]
+     [C#m]eigentlich [H]bist du nicht mein [A]Typ [Asus2] [A]
+     und auf [C#m]jeden [H]Fall bin ich fast [A]gar nicht in [H]dich verlie[C#m]bt.
+     \\
+     [C]Verliebt, [G]verliebt, [A]verliebt,
+     [C#m]verliebt, [C]verliebt, [G]verliebt,
+     fast [A]gar nicht in dich ver[E]liebt.
+{/chorus}
+
+{a:Intro: 2x spielen}
+
+{guitartab: [6;0][4;4][5;4][4;4][6;0][4;4][5;4][4;4][6;0][4;4][5;4][4;4][6;0][4;4][5;4][4;4] | [6;0][4;4][5;2][4;4][6;0][4;4][5;2][4;4][6;0][4;4][5;2][4;4][6;0][4;4][5;2][4;4]}

@@ -1,0 +1,41 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: Bang Bang}
+{subtitle: Nancy Sinatra}
+
+{a: Intro:}
+
+{guitartab: [14.5ex;Em]&[1;0]&[5;0][3;2][4;0][5;0][4;3][4;0]|[14.5ex;Am]&[2;0]&[5;1][3;2][4;2][5;1][5;0][4;2]|[14.5ex;H7]&[2;2]&[5;0][3;1][4;2][5;1][5;0][4;2][4;0][3;4]|[14.5ex;Em]&[1;0][2;2][3;2][4;0][5;0][6;0]}
+
+{a:Vers 1:}
+{bridge}
+	[Em]I was five and [Em/D#]he was six, [Em/D]we rode on horses [E/C#]made of sticks.
+	[D]He wore black and I wore white. [H7]He would always win the fight, 
+	[H-E]Bang bang. [Em]He shot me [H-E]down, [H-E]bang bang. I [Em]hit the [E-H]ground, 
+	[E-D]bang bang. [D]That awful sound, [D-H7]Bang bang. My baby shot me down.
+{/bridge}
+
+{a:Vers 2:}
+{bridge}
+	Seasons came and changed the time. When I grew up I called him mine.
+	He would always laugh and say, "Remember when we used to play bang bang?"
+	I shot you down, bang bang.  You hit the ground, bang bang.
+	That awful sound, bang bang. I used to shoot you down.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [Em]Music played and people sang. [D]Just for me the church bells rang. [C][C9][C][Cmaj7][C][H7]
+{/chorus}
+
+{a:Vers 3:}
+{bridge}
+	Now he's gone, I don't know why, and 'til this day sometimes I cry.
+	He didn't even say goodbye, he didn't take the time to lie.
+	Bang bang. He shot me down, bang bang. I hit the ground, bang bang.
+	That awful sound, bang bang. My baby shot me down.
+{/bridge}

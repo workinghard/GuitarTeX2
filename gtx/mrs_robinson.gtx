@@ -1,0 +1,65 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{even}
+{title: Mrs. Robinson}
+{subtitle: Simon and Garfunkel}
+
+{bridge}
+	[E7]De de [A] de[D]de [G]de [C]de [Am]de [E7]de [D]de
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [D]And here's to [G]you Mrs.[Em] Robinson
+     [G]Jesus loves you[Em] more than you will kn[C]ow, [Am]wo, wo [D]wo
+     [D]God bless you[G] please Mrs.[Em]Robinson
+     [G]Heaven hold's a [Em]place for those who [C]pray, hey, [Am]hey hey, hey [E] hey hey
+{/chorus}
+
+{a:Vers 1:}
+{bridge}
+	[E7]We'd like to know a little bit about you for our files
+	[A]We'd like to help you learn to help yourself
+	[D]Look around you[G] all you see [C]are sympath[Am]etic eyes
+	[E7]Stroll around the grounds [D]until you feel at home
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Vers 2:}
+{bridge}
+	[E7]Hide it in a hiding place where no one ever goes
+	[A]Put it in your pantry with your cupcakes
+	[D]It's a little [G]secret just the [C]Robinsons' [Am]affair
+	[E7]Most of all you've got to hide it [D]from the kids
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Koo koo ka[G] choo Mrs.[Em]Robinson
+     [G]Jesus loves you [Em]more than you will [C]know , [Am] wo wo [D] wo
+     [D]God bless you [G]please Mrs.[Em]Robinson
+     [G]Heaven hold's [Em]a place for those who [C]pray, hey [Am]hey hey, hey [E]hey hey
+{/chorus}
+
+{np}
+
+{a:Vers 3:}
+{bridge}
+	[E7]Sitting on a sofa on a Sunday afternoon
+	[A]Going to the candidates debate
+	[D]Laugh about it [G]shout about it [C]when you've got to [Am]choose
+	[E7]Any way you look at it you [D]lose
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     Where have you [G]gone Joe DiMaggio[Em]
+     [G]A nation turns its [Em]lonely eyes to [C]you, [Am]woo woo [D]woo
+     [D]What's that you [G]say Mrs. [Em]Robinson
+     [G]Joltin' Joe has [Em]left and gone [C]away, [Am]hey hey hey, hey hey [E7]hey
+{/chorus}

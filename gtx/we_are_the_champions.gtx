@@ -1,0 +1,41 @@
+{title: We Are The Champions}
+{subtitle: Queen}
+
+
+{define:H7/9  t x 2 1 2 n n}
+{define:C9    t x 3 2 n 3 n}
+{define:C/B   t x 2 n n 3 n}
+
+{a: Capo 3}
+
+{a:Vers 1:}
+{bridge}
+I've paid my [Am]dues [Em] Time after [Am]time [Em]
+I've done my [Am]sentence [Em] But committed no [Am]crime [Em]
+And bad mi[C]stakes [F] I've made a [C]few [F]
+I've had my [C]share of [C/B]sand kicked in my [Am7]face
+But [D]I've come [G]through
+And I need to go [G]on and on and on and [A7]on
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+    [D]We are the [F#m]champions - my [Hm]friends [G] [A]
+    And [D]we'll keep on [F#m]fightin' till the [G]end [F#] [F] [H7/9] [H7]
+    [Em]We are the champions
+    [Gm]We are the [A7]champions
+    [D]No time for [C9]losers
+    'Cause [F]we are the [G]champions [Am7] of the [Dm]world [Em]
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+I've taken my bows and my curtain calls
+You've brought me fame and fortune and everything that goes with it
+I thank you all. But it's been no bed of roses no pleasure cruise
+and I consider it a challenge before human race that I ain't gonna lose
+And I need to go on and on and on and on
+{/bridge}
+
+
+{a:Refrain: ... 2x}

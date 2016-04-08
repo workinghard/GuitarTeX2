@@ -1,0 +1,82 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{language: german}
+
+{color_chorus:0,0,0}
+
+{even}
+{title: Der M"order Ist Immer Der G"artner}
+{subtitle: Reinhard Mey}
+
+{a:Vers 1:}
+{bridge}
+	[Am]Die Nacht liegt wie Blei auf [Dm]Schlo"s Darkmoor,
+	Sir [G7]Henry liest Financial [C]Times.[E]
+	Zw"olf[Am]mal schl"agt gespenstisch die [Dm]Turmuhr,
+	der [E7]Buttler hat Ausgang bis [Am]eins.
+	Da [A7]schleicht sich im flackernden Lampenschein
+	fast [Dm]lautlos ein Schatten zur T"ure herein
+	und [H7]st"urzt auf Sir Henry, derselbe lebt ab,
+	und [E]nimmt das Geheimnis mit in das [E7]Grab.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [A]Der M"order war wieder der [D]G"artner, und der [E7]plant schon den n"achsten [A]Coup. [E]
+     Der [A]M"order ist immer der [D]G"artner, und [E]der schl"agt erbarmungslos,
+     [A]der schl"agt [D]erbarmungslos, [A]der schl"agt [E7]erbarmungslos [A]zu.
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	Bei Maigret ist schon seit zwei Stunden ein Fahrstuhl andauernd blockiert.
+	Inspektor Dupont ist verschwunden, der Fahrstuhl wird gerad' repariert.
+	Da "offnet sich lautlos die T"ure zum Schacht,
+	es ert"ont eine Stimme, die h"amisch lacht.
+	Inspektor Dupont traf im Fahrstuhl ein Schu"s,
+	der Amtsarzt stellt sachlich fest - Exitus.
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Vers 3:}
+{bridge}
+	Am Hafendamm S"ud wurde neulich ein Hilfsleuchtturmwart umgebracht.
+	Inspektor van Dyke, stets voreilig, hat drei T"ater schon im Verdacht:
+	Die Wirtin zu Schleuse, denn die schielt und die hinkt,
+	der K"apt'n, der schiffsbr"uchig im Rum ertrinkt,
+	der Lotse, der vorgibt, Napoleon zu sein,
+	aber da irrt van Dyke, keiner war's von den Drei'n
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Vers 4:}
+{bridge}
+	Die steinreiche Erbin zu Manster ist wohnhaft im f"unfzehnten Stock.
+	Dort schl"aft sie bei offenem Fenster, Big-Ben schl"agt gerad' two o'clock.
+	Ganz leis bl"aht der Wind die Gardinen auf,
+	auf die Erbin zeigt mattschwarz ein st"ahlerner Lauf,
+	und ein gellender Schrei zerreißt j"ah die Luft,
+	auch das war wohl wieder der G"artner der Schuft.
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Vers 5:}
+{bridge}
+	In seinem Gew"achshaus im Garten, steht in gr"uner Sch"urze ein Mann.
+	Der G"artner r"uhrt mehrere Arten von Gift gegen Blattl"ause an.
+	Der G"artner singt pfeift und lacht verschmitzt,
+	seine Heckenschere die funkelt und blitzt,
+	Sense, Spaten und Jagdgewehr stehen an der Wand,
+	da w"urgt ihn von hinten eine meuchelnde Hand.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+       Der M"order war n"amlich der Buttler, und der schlug erbarmungslos zu.
+       Der M"order ist immer der Buttler, man lernt eben t"aglich dazu.
+{/chorus}

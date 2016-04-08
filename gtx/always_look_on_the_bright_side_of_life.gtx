@@ -1,0 +1,75 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{even}
+{title: Always Look On The Bright Side Of Life}
+{subtitle: Monti Python}
+
+{define:Am7  t x n 2 n 1 n} 
+
+{a:Vers 1:}
+{bridge}
+	[Am]Some things in life are [D]bad they can [G]really make you [Em]mad
+	[Am]Other things just [D]make you swear and [G]curse
+	When you've [Am]chewing and life's [D]gristle
+	Don't give [G]grumble, give a [Em]whistle
+	And [Am7]this'll help things turn out for the [D7]best
+{/bridge}
+
+
+{a:Refrain:}
+{chorus}
+     And [G]always [Em]look on the [Am]bright [D7]side of [G]life [Em]  [Am]   [D7]
+     [G]Always [Em]look on the [Am]light [D7]side of [G]life [Em]  [Am]   [D7]
+{/chorus}
+
+
+{a:Vers 2:}
+{bridge}
+	If [Am]life seems jolly [D]rotten there's [G]something you've [Em]forgotten
+	and that's to [Am]laugh and smile and [D]dance and [G]sing.
+	When you've [Am]feeling in the [D]dumps don't be [G]silly [Em]chumps
+	Just [Am7]purse your lips and whistle - that's the [D7]thing
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     And [G]always [Em]look on the [Am]bright [D7]side of [G]life [Em]  [Am]   [D7]
+     [G]Always [Em]look on the [Am]light [D7]side of [G]life [Em]  [Am]   [D7]
+{/chorus}
+
+{a:Vers 3:}
+{bridge}
+	For [Am]life is quite abs[D]urd and [G]death's the final [Em]word
+	you must [Am]always face the [D]curtain with a [G]bow
+	[Am]forget about your [D]sin - give the [G]audience a [Em]grin
+	[Am7]enjoy it - it's your last chance any[D7]how.
+{/bridge}
+
+{np}
+
+{a:Refrain:}
+{chorus}
+     So [G]always [Em]look on the [Am]bright [D7]side of [G]death [Em]  [Am]   [D7]
+     [G]just be[Em]fore you [Am]draw your ter[D7]minal [G]breath [Em]  [Am]   [D7]
+{/chorus}
+
+{a:Vers 4:}
+{bridge}
+	[Am]Life's a piece of [D]shit [G]when you look at [Em]it
+	[Am]Life's a laugh and [D]death's a joke it's [G]true 
+	You'll [Am]see it's all a [D]show
+	keep'em [G]laughing as you [Em]go
+	[Am7]just remember that the last laugh is on [D7]you.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     And [G]always [Em]look on the [Am]bright [D7]side of [G]life [Em]  [Am]   [D7]
+     [G]Always [Em]look on the [Am]light [D7]side of [G]life [Em]  [Am]   [D7]
+     [A]always [F#m]look on the [Hm]right [E7]side of [A]life [F#m]  [Hm]   [E7]
+     [A]Always [F#m]look on the [Hm]light [E7]side of [A]life [F#m]  [Hm]   [E7]
+{/chorus}

@@ -1,0 +1,41 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+{language: german}
+{color_chorus:0,0,0}
+{color_bridge:0,0,0}
+
+{title: Ofen Aus Glas}
+{subtitle: Element Of Crime}
+
+{define: H7  t x 2 1 2 n 2}
+
+{a:Vers 1:}
+{bridge}
+	[D]Kauf dir ein Sä[D]ckchen voll B[C]lei, [C]bind's an mein B[D]ein
+	und w[C]irf mich hin[G]ein, in den [H7]See deiner Wü[C]nsche
+	und sieh zu[D] wie ich ver[G]sink', verbr[H7]ing' dann den Ta[Em]g
+	mit dem Kä[C]mmen deiner H[D]aare.
+{/bridge}
+
+{a:Vers 2:}
+{bridge}
+	K[D]auf' dir ein H[D]alsband aus S[C]amt ,l[C]eg' es mir [D]um
+	und fü[C]hr' mich h[G]erum, im Gestr[H7]üpp deines D[C]enkens
+	und sieh z[D]u, wie ich mich verh[G]ak', verbri[H7]ng' dann den T[Em]ag
+	mit dem Fe[C]ilen deiner Nä[D]gel.
+{/bridge}
+
+{a:Vers 3:}
+{bridge}
+	K[D]auf' dir einen O[D]fen aus G[C]las, he[C]ize ihn e[D]in
+	und l[C]eg' mich hi[G]nein, in das F[H7]euer deines Z[C]ornes
+	und sieh zu[D] wie ich's ert[G]rag', verbr[H7]ing' dann den T[Em]ag
+	mit dem Re[C]iben deiner A[D]ugen.
+	\\
+	Doch w[G]arte nicht  [G], w[C]arte nicht  [C]
+	zu l[G]ang.
+{/bridge}
+
+{a:Zwischenspiel:}
+{guitartab: [6;3][6;3][6;3][6;3][6;2] _ [6;0][6;2] }

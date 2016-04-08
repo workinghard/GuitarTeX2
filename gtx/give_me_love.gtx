@@ -1,0 +1,47 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{title: Give Me Love}
+{subtitle: Lambretta}
+
+{define:Am/G#  t x n 2 1 1 n}
+{define:Am/G   t x n 2 n 1 n} 
+{define:Am/F#  t x n 4 5 5 5}
+{define:Dm6    t x n n 2 n 1}
+{define:Esus4  t n 2 2 2 n n}
+{define:F9     1 n 2 n n n 2} 
+
+{a:Vers 1:}
+{bridge}
+	[Am]Such a long [Am/G#]time ago, [Am/G]I found [Am/F#]you
+	in the [Dm]street with your [Dm6]friends
+	your [Esus4] friends were so strung [E7]out.
+	[Am]And I was [Am/G#]taken in  [Am/G]by your false blue [Am/F#]eyes
+	your [Dm]kiss feels like a [Dm6]drug,
+	your [Esus4]touch feels like the [E7]sky.
+	[F]What am I supposed to [G]do with some - [C]one as screwed [Am]up as you
+	[F9]What am I supposed to do, when my [C]heart is stuck on [G]you
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [Dm]Give me [G]love, [C]give me [F]all that you got
+     [Dm]Take [G]me, forget the [Am]drugs[C]
+     [Dm]Give me [G]love, [C]give me lo - [F]ve
+     [Dm]Take [G]me, forget the [C]drugs
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	[Am]I wanna come [Am/G#]around today, [Am/G]but something [Am/F#]is in my way
+	I'm [Dm]scared to be [Dm6]there, I  don't [Esus4]know what I might [E7]see
+	[Am]Daemons make a [Am/G#]fool of you, [Am/G]I know what you're [Am/F#]going through
+	but the [Dm]night won't be [Dm6]long, [Esus4]tomorow they'll be [E7]gone.
+	[F]So what am I [G]supposed to do  with some - [C]one as lost as [Am]you
+	[F9]So what am I supposed to do  when my [C]heart is stuck on [G]you
+{/bridge}
+
+{a:Refrain ...}

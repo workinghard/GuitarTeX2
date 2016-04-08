@@ -1,0 +1,10 @@
+{document_class:book}
+
+{book_author:I am the author}
+{book_title:This is my book}
+{book_date:02/28/2007}
+
+
+{include:<full_path>/GuitarTeX2/examples/lazy_blues.gtx}
+
+{include:<full_path>/GuitarTeX2/examples/griechischer_wein.gtx}

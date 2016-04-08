@@ -1,0 +1,108 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+
+{color_chorus:0,0,0}
+
+{even}
+{title: Behind Blue Eyes}
+{subtitle: Limp Bizkit}
+
+{define:G6     t 3 2 n n 3 n}
+{define:Dsus2  t x n n 3 2 n} 
+{define:Cadd9  t x 3 2 n 3 n}
+{define:Asus2  t x n 2 2 n n}
+{define:Esus4  t n 2 2 2 n n}
+
+{a:Vers 1:}
+{bridge}
+	[Em]No one knows what it's [G6]like 
+	To be the [Dsus2]bad man
+	To be the [Cadd9]sad man
+	[A]Behind [Asus2]blue [A]eyes 
+	And [Em]no one knows what it's [G6]like
+	To be [Dsus2]hated
+	To be [Cadd9]fated 
+	To telling [A]only[Asus2] [A]lies
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     But my [Cadd9]dreams [D]
+     They aren't as [G]empty
+     As my [Cadd9]conscience [D]seems [E]to be [Esus4] [E]
+     I have [Hm]hours, only [Cadd9]lonely
+     My love is [D]vengeance
+     That's never [A]free [Asus2] [A]
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	[Em]No one knows what it's [G6]like 
+	To feel these [Dsus2]feelin's 
+	Like I [Cadd9]do 
+	And I blame [A]you [Asus2] [A]
+	[Em]No one bites back as [G6]hard 
+	On their [Dsus2]anger
+	None of my [Cadd9]pain an' woe 
+	Can show [A]through [Asus2] [A]
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Mittelteil:}
+{chorus}
+     [Asus2] Discover [Em]L.[G6]I.M.[Dsus2]P     Say it
+     Discover    [Cadd9]L.I.M.[Asus2]P     Say it
+{/chorus}
+
+
+{a:Vers 3:}
+{bridge}
+	[Em]And no one knows how to [G6]say
+	That they're [Dsus2]sorry
+	An' don't [Cadd9]worry 
+	I'm not [A]tell[Asus2]ing[A] lies 
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Vers 4:}
+{bridge}
+	[Em]No one knows what it's [G6]like 
+	To be the [Dsus2]bad man 
+	To be the [Cadd9]sad man 
+	[A]Behind [Asus2]blue [A]eyes
+{/bridge}
+
+
+{np}
+
+{a:INTRO}
+
+{tab}
+e|-----------0--------------------0----------------0-----------------------|
+B|-------------0--------------------3---------3-------3---3---------3------|
+G|--------0------0-------------0------0-----2---2-------2--------2----2----|
+D|------2-------------------0-----------0-0-------------------0------------|
+A|----2-------------2-----2------------------------------------------------|
+E|--0------------------3---------------------------------------------------|
+{/tab}
+
+{tab}
+e|--0-------------------------0---------------------------0----------------|
+B|-----3---3-----------3----------3------3---------3---------3-----3-------|
+G|-------2-----------------------------------------------------------------|
+D|-----------------2------2-----------2---------2-----2---------2----------|
+A|--------------3----------------------------3-----------------------------|
+E|-------------------------------------------------------------------------|
+{/tab}
+
+{tab}
+e|----------------0-----------------------------0---------------------|
+B|---------0---------0------0-----------0-----------0-------0---------|
+G|--------------------------------------------------------------------|
+D|-----2------2----------2----------2------2------------2-------------|
+A|--0----------------------------0------------------------------------|
+E|--------------------------------------------------------------------|
+{/tab}

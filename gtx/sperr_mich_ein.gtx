@@ -1,0 +1,46 @@
+{geometry:a4paper}
+{geometry:margin=2.5cm}
+{font_size:12}
+{language: german}
+{color_chorus:0,0,0}
+
+{title: Sperr Mich Ein}
+{subtitle: Element Of Crime}
+
+{a:Vers 1:}
+{bridge}
+	[D] Lass mich noch eine [Hm]rauchen,[D] dann auf zur [Hm]Tat -
+	[F#] die H"ande [E]hinter'm Kopf versch[G]r"ankt.
+	[D] Durchsuchen musst du [Hm]gr"undlich,[D] "uber[Hm]all -
+	[F#] der Fall ist schw[E]erer als du [G]denkst.
+{/bridge}
+
+{a:Refrain:}
+{chorus}
+     [G] Erkl"ar' mir meine [A]Rechte,[D] sperr mich [Hm]ein,
+     [G]ich will von [A]dir verhaftet [D]sein. [Hm] [D] [Hm] 
+{/chorus}
+
+{a:Vers 2:}
+{bridge}
+	[D] Meine Sitten sind verl[Hm]ottert,[D] mein Weltbild ist verdr[Hm]eht
+	[F#] und schmutzig [E]meine Phanta[G]sie.
+	[D] Bin schuldig groben [Hm]Unfugs,[D] der V"oller[Hm]ei,
+	[F#] und gut zu [E]Tieren war ich [G]nie.
+{/bridge}
+
+{a:Refrain ...}
+
+{a:Vers 3:}
+{bridge}
+	[D] Gib mir meine St[Hm]rafe,[D] hart hab' ich es [Hm]gern.
+	[F#] Ich halte st[E]ill, was immer auch pas[G]siert.
+	[D] In Freiheit bin ich [Hm]garstig,[D] gefangen will ich [Hm]sein,
+	[F#] kleingem[E]acht und kotverschm[G]iert.
+{/bridge}
+
+{a:Refrain ...}
+{a:Intro:}
+\footnotesize
+{guitartab: [3;4][4;3][5;5][4;3][3;4][4;3][5;5][4;3][3;2][4;1][5;3][4;1][6;0][5;3][4;1][5;3]|[3;4][4;3][5;5][4;3][3;4][4;3][5;5][4;3][3;2][4;1][5;3][4;1][3;2][4;0][5;3][4;0]}
+\normalsize
