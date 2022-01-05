@@ -100,7 +100,7 @@ class FileTransfer {
         if (length > Integer.MAX_VALUE) {
             // File is too large
             sendMsg("Filetransfer[" + fId + "]: File is too large");
-            cleanTmp(myFile);
+            cleanTmp(myFile, in);
             return 1;
         } else {
             int myFileLength = (int) length;
@@ -110,7 +110,7 @@ class FileTransfer {
                 fileLengthResult = inStream.readUTF();
             } catch (Exception i) {
                 sendMsg("Filetransfer[" + fId + "]: stream error" + i);
-                cleanTmp(myFile);
+                cleanTmp(myFile, in);
                 return 1;
             }
             if (fileLengthResult.equals(ok)) {
@@ -137,7 +137,7 @@ class FileTransfer {
                 }
             } else {
                 sendMsg("Filetransfer[" + fId + "]: sending file length failed: " + fileLengthResult);
-                cleanTmp(myFile);
+                cleanTmp(myFile, in);
                 return 1;
             }
         }
@@ -174,7 +174,7 @@ class FileTransfer {
                 outStream.writeUTF(ok);
             } catch (Exception i) {
                 sendMsg("Filetransfer[" + fId + "]: stream error " + i);
-                cleanTmp(myFile);
+                cleanTmp(myFile, out);
                 return 1;
             }
             sendMsg("Filetransfer[" + fId + "]: awaiting file...");
@@ -281,6 +281,15 @@ class FileTransfer {
     private void sendMsg(String msg) {
         if (debug == 1) {
             System.out.println(msg);
+        }
+    }
+
+    private void cleanTmp(String fileName, RandomAccessFile file) {
+        try {
+            new File(fileName).delete();
+            file.close();
+        } catch (Exception e) {
+            sendMsg("can't clean tmp file: " + e);
         }
     }
 

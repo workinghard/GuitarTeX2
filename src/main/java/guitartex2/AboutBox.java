@@ -48,8 +48,8 @@ public class AboutBox extends JFrame implements ActionListener {
 
 	public AboutBox() {
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		aboutTop = new Double((screenSize.getHeight()/2) - (aboutHeight/2)).intValue();
-		aboutLeft = new Double((screenSize.getWidth()/2) - (aboutWidth/2)).intValue();
+		aboutTop = Double.valueOf((screenSize.getHeight()/2) - (aboutHeight/2)).intValue();
+		aboutLeft = Double.valueOf((screenSize.getWidth()/2) - (aboutWidth/2)).intValue();
 
 		this.setResizable(false);
 		resbundle = ResourceBundle.getBundle ("GuitarTeX2strings", Locale.getDefault());
@@ -67,7 +67,7 @@ public class AboutBox extends JFrame implements ActionListener {
 		}
 	
 		this.getContentPane().setLayout(new BorderLayout(30, 30));
-		java.net.URL imgURL = AboutBox.class.getResource("images/gitarre1.jpg");
+		java.net.URL imgURL = AboutBox.class.getResource("/images/gitarre1.jpg");
 		ImageIcon icon = new ImageIcon(imgURL, "");
 		
 		aboutLabel = new JLabel[labelCount];

@@ -85,7 +85,7 @@ final class Configurations {
 				
 				Properties defProps = new Properties();
 				//defProps.load(defaultPropFIS);
-				defProps.load(GuitarTeX2.class.getResourceAsStream(propertiesFileName));
+				defProps.load(GuitarTeX2.class.getResourceAsStream("/"+propertiesFileName));
 				//defaultPropFIS.close();
 				Enumeration<Object> defElements = defProps.keys();
 				mProperties.load( propsFIS );
@@ -495,7 +495,7 @@ final class Configurations {
 			mProperties.setProperty("gtxServer", defProps.getProperty("gtxServer"));
 			mProperties.setProperty("gtxServerPort", defProps.getProperty("gtxServerPort"));
 		} catch (Exception e) {
-                    InfoBox infoBox = new InfoBox(e + "");
+        	new InfoBox(e + "");
 		}
 		/*
 		mPdfViewerField.setText(myConfiguration.getPdfViewer());

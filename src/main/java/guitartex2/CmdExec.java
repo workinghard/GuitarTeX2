@@ -37,7 +37,7 @@ public class CmdExec{
 			}
                     }
 		}catch (Exception err) {
-                    InfoBox infoBox = new InfoBox("ERR: " + err);
+        	new InfoBox("ERR: " + err);
 		}
 		return ausgabe;
 	}

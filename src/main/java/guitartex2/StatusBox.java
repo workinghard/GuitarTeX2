@@ -71,7 +71,7 @@ public class StatusBox extends JFrame implements ActionListener {
 			bodyFont = new Font("SansSerif", Font.PLAIN, 10);
 		}
 		
-		java.net.URL imgURL = StatusBox.class.getResource("images/info.png");
+		java.net.URL imgURL = StatusBox.class.getResource("/images/info.png");
 		ImageIcon icon = new ImageIcon(imgURL, "");
 		
 		Panel textPanel = new Panel(new GridBagLayout());

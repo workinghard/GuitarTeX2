@@ -47,7 +47,7 @@ public class GuitarTeX2Convert {
                         if (!fileName.equals("")) {
                             File f = new File(fileName);
                             if (f.canRead()) {
-                                GuitarTeX2Convert guitarTeX2Convert = new GuitarTeX2Convert(f);
+                                new GuitarTeX2Convert(f);
                             } else {
                                 System.out.println("error: can't read file\n");
                                 System.out.println(help);

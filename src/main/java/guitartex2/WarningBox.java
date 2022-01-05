@@ -143,7 +143,7 @@ public class WarningBox extends JFrame implements ActionListener {
 				setEnabled(false);
 			}
 			if ( mAction.equals("mInfoAction")) {
-                            InfoBox infoBox = new InfoBox(myInfo);
+                new InfoBox(myInfo);
 			}
 		}
 	}

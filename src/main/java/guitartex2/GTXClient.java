@@ -136,7 +136,7 @@ public class GTXClient extends Thread{
     		}
     		String texResult = din.readUTF();
     		if ( texResult.equals(failed)) {
-                        InfoBox infoBox = new InfoBox(resbundle.getString("texFailed"));
+                new InfoBox(resbundle.getString("texFailed"));
     			logToConsole("texin unsuccessfull");
     			//myStatusBox.setStatus("FEHLER!");
     			//myStatusBox.requestFocus();

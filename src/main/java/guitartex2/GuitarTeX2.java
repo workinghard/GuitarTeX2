@@ -257,7 +257,7 @@ public class GuitarTeX2 extends JFrame {
 
         //myConf.checkConfig();
         if (myConf.checkConfig() == false) {
-            WarningBox warningBox = new WarningBox(resbundle.getString("confFailed"), myConf.getConfProblems());
+            new WarningBox(resbundle.getString("confFailed"), myConf.getConfProblems());
             System.err.println("loading configuration failed!");
         }
         consoleBox.setGTXClient(myConf);
@@ -374,31 +374,31 @@ public class GuitarTeX2 extends JFrame {
             mActionToolBar = new JToolBar(resbundle.getString("actionToolBar"));
             mActionToolBar.setFloatable(false);
             // -- // -- New
-            URL mNewImageURL = GuitarTeX2.class.getResource("images/filenew.png");
+            URL mNewImageURL = GuitarTeX2.class.getResource("/images/filenew.png");
             mNewButton = mActionToolBar.add(mNewAction);
             mNewButton.setIcon(new ImageIcon(mNewImageURL));
             mNewButton.setText("");
             mNewButton.setToolTipText(resbundle.getString("newItem"));
             // -- // -- Open
-            URL mOpenImageURL = GuitarTeX2.class.getResource("images/fileopen.png");
+            URL mOpenImageURL = GuitarTeX2.class.getResource("/images/fileopen.png");
             mOpenButton = mActionToolBar.add(mOpenAction);
             mOpenButton.setIcon(new ImageIcon(mOpenImageURL));
             mOpenButton.setText("");
             mOpenButton.setToolTipText(resbundle.getString("openItem"));
             // -- // -- Save
-            URL mSaveImageURL = GuitarTeX2.class.getResource("images/filesave.png");
+            URL mSaveImageURL = GuitarTeX2.class.getResource("/images/filesave.png");
             mSaveButton = mActionToolBar.add(mSaveAction);
             mSaveButton.setIcon(new ImageIcon(mSaveImageURL));
             mSaveButton.setText("");
             mSaveButton.setToolTipText(resbundle.getString("saveItem"));
             // -- // -- SaveAs
-            URL mSaveAsImageURL = GuitarTeX2.class.getResource("images/filesaveas.png");
+            URL mSaveAsImageURL = GuitarTeX2.class.getResource("/images/filesaveas.png");
             mSaveAsButton = mActionToolBar.add(mSaveAsAction);
             mSaveAsButton.setIcon(new ImageIcon(mSaveAsImageURL));
             mSaveAsButton.setText("");
             mSaveAsButton.setToolTipText(resbundle.getString("saveAsItem"));
             // -- // -- GTX2TeX
-            URL mGTX2TeXURL = GuitarTeX2.class.getResource("images/gtx2tex.png");
+            URL mGTX2TeXURL = GuitarTeX2.class.getResource("/images/gtx2tex.png");
             mGtx2TeXButton = mActionToolBar.add(mGTX2TeXAction);
             mGtx2TeXButton.setIcon(new ImageIcon(mGTX2TeXURL));
             mGtx2TeXButton.setText("");
@@ -425,7 +425,7 @@ public class GuitarTeX2 extends JFrame {
             //mDvi2PdfButton.setToolTipText(resbundle.getString("dvi2pdf"));
             //mDvi2PdfButton.setEnabled(false);
             // --  // --  TEX2PDF
-            URL mTeX2PdfURL = GuitarTeX2.class.getResource("images/tex2pdf.png");
+            URL mTeX2PdfURL = GuitarTeX2.class.getResource("/images/tex2pdf.png");
             mTeX2PdfButton = mActionToolBar.add(mTeX2PdfAction);
             mTeX2PdfButton.setIcon(new ImageIcon(mTeX2PdfURL));
             mTeX2PdfButton.setText("");
@@ -473,8 +473,8 @@ public class GuitarTeX2 extends JFrame {
 
             mHarpToolBar = new JToolBar(resbundle.getString("harpToolBar"));
             //mHarpToolBar.setLayout(new GridLayout(2,9));
-            ImageIcon upButtonIcon = createImageIcon("images/icon-up2.png");
-            ImageIcon downButtonIcon = createImageIcon("images/icon-down2.png");
+            ImageIcon upButtonIcon = createImageIcon("/images/icon-up2.png");
+            ImageIcon downButtonIcon = createImageIcon("/images/icon-down2.png");
             mHarpUp = new JToggleButton(upButtonIcon);
             Action pmUpAction = new mPMHarpActionClass("up");
             mHarpUp.addActionListener(pmUpAction);
@@ -926,7 +926,7 @@ public class GuitarTeX2 extends JFrame {
                     mFileChanged = false;
                 } catch (IOException ioex) {
                     consoleBox.addText("ERR: " + ioex);
-                    InfoBox infoBox = new InfoBox("Error: " + ioex);
+                    new InfoBox("Error: " + ioex);
                 }
             }
         }
@@ -947,7 +947,7 @@ public class GuitarTeX2 extends JFrame {
                 mFileChanged = false;
             } catch (IOException ioex) {
                 consoleBox.addText("ERR: " + ioex);
-                InfoBox infoBox = new InfoBox("Error: " + ioex);
+                new InfoBox("Error: " + ioex);
             }
         }
     }

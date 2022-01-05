@@ -3,9 +3,14 @@ UPDATE: Server has moved. Please use "guitartex2.nikolai-rinas.de" instead
 Release Notes
 =============
 
+Version 3.4.1
+* New build pipeline with VSC and maven
+* Code cleanup
+* Dropped standalone mac app support
+
 Version 3.4.0:
 * Code cleanup: Java 1.8 is required
-* App for Mac: Embeded Java runtime. Works standalone
+* App for Mac: Embedded Java runtime. Works standalone
 
 Version 3.3.1
   * Defaultwerte angepasst
