@@ -81,7 +81,7 @@ public class WarningBox extends JFrame implements ActionListener {
 		if (bodyFont == null) {
 			bodyFont = new Font("SansSerif", Font.PLAIN, 10);
 		}
-		java.net.URL imgURL = WarningBox.class.getResource("images/info.png");
+		java.net.URL imgURL = WarningBox.class.getResource("/images/info.png");
 		ImageIcon icon = new ImageIcon(imgURL, "");
 		Panel imagePanel = new Panel(new GridBagLayout());
 		Panel textPanel = new Panel(new GridBagLayout());
