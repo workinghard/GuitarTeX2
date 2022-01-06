@@ -14,6 +14,7 @@
   * Dropped standalone mac app support
   * Standalone gtx converter available
   * Published build versions for Windows/Linux/Mac
+  * Guitartab command is now dynamic \textwidth (thanks for contribution @e-dschungel)
 
 ### Version 3.4.0:
   * Code cleanup: Java 1.8 is required
