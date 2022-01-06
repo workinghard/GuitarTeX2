@@ -271,7 +271,7 @@ public class GuitarTeX2 extends JFrame {
 		//gtxHeight = this.getHeight();
         //gtxWidth = this.getWidth();
         gtxHeight = 650;
-        gtxWidth = 900;
+        gtxWidth = 950;
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         //gtxTop = new Double((screenSize.getHeight()/2) - (gtxHeight/2)).intValue();
