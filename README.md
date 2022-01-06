@@ -2,7 +2,7 @@
 
 ## Documentation
   * [Available in German](https://github.com/workinghard/GuitarTeX2/blob/a9db41ba391bd3afd5dafd1106c3e946599ce262/doc/GuitartTeX2-documentation_de.pdf)
-  * Available in English
+  * [Available in English](https://github.com/workinghard/GuitarTeX2/blob/3db89f3205e154896073fc75aa1a59e937b54a07/doc/GuitartTeX2-documentation_en.pdf)
 
 
 ## Release Notes
