@@ -1,6 +1,6 @@
 # Server online: guitartex2.nikolai-rinas.de 
 
-## Build instructions
+## Build
 You can build it on you platform with maven. I'm using Visual Studio Code with maven an openjdk package to build the release versions.
 
 ## Documentation
