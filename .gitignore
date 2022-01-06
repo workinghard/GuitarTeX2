@@ -1,3 +1,8 @@
 target*
 build*
 bin*
+
+doc/*.tex
+doc/*.aux
+doc/*.log
+doc/*.synctex.gz
