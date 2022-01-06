@@ -20,7 +20,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.net.URL;
 import java.util.Enumeration;
 import java.util.Properties;
 
@@ -121,7 +120,7 @@ final class Configurations {
 					if ( ! new File(userFileDirectory).exists() ) {
 						new File(userFileDirectory).mkdir();
 					}
-					copyFile(GuitarTeX2.class.getResource(propertiesFileName), new File(userFileFullPath));
+					copyFile(GuitarTeX2.class.getResourceAsStream("/"+propertiesFileName), new File(userFileFullPath));
 					return userFileFullPath;
 				}catch (Exception e) {
 					mConsole.addText("creating user config file failed: " + e);
@@ -147,7 +146,7 @@ final class Configurations {
 					if ( ! new File(userFileDirectory).exists() ) {
 						new File(userFileDirectory).mkdir();
 					}
-					copyFile(GuitarTeX2.class.getResource(propertiesFileName), new File(userFileFullPath));
+					copyFile(GuitarTeX2.class.getResourceAsStream("/"+propertiesFileName), new File(userFileFullPath));
 					return userFileFullPath;
 				}catch (Exception e) {
 					mConsole.addText("creating user config file failed: " + e);
@@ -173,7 +172,7 @@ final class Configurations {
 					if ( ! new File(userFileDirectory).exists() ) {
 						new File(userFileDirectory).mkdir();
 					}
-					copyFile(GuitarTeX2.class.getResource(propertiesFileName), new File(userFileFullPath));
+					copyFile(GuitarTeX2.class.getResourceAsStream("/"+propertiesFileName), new File(userFileFullPath));
 					return userFileFullPath;
 				}catch (Exception e) {
 					mConsole.addText("creating user config file failed: " + e);
@@ -197,7 +196,7 @@ final class Configurations {
 				if ( ! new File(userFileDirectory).exists() ) {
 					new File(userFileDirectory).mkdir();
 				}
-				copyFile(GuitarTeX2.class.getResource(propertiesFileName), new File(userFileFullPath));
+				copyFile(GuitarTeX2.class.getResourceAsStream("/"+propertiesFileName), new File(userFileFullPath));
 				return userFileFullPath;
 			}catch (Exception e) {
 				mConsole.addText("creating user config file failed: " + e);
@@ -209,9 +208,9 @@ final class Configurations {
 	}
 	
 	
-	private void copyFile(URL inURL, File out) throws Exception {
-		mConsole.addText("CopyFile: " + inURL);
-            try (InputStream inStream = inURL.openStream(); FileOutputStream fos = new FileOutputStream(out)) {
+	private void copyFile(InputStream inStream, File out) throws Exception {
+		mConsole.addText("CopyFile: ...");
+            try (FileOutputStream fos = new FileOutputStream(out)) {
                 
                 byte[] buf = new byte[1024];
                 int i;
