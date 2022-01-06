@@ -1,7 +1,7 @@
 # Server online: guitartex2.nikolai-rinas.de 
 
 ## Documentation
-  * Available in German
+  * [Available in German](https://github.com/workinghard/GuitarTeX2/blob/a9db41ba391bd3afd5dafd1106c3e946599ce262/doc/GuitartTeX2-documentation_de.pdf)
   * Available in English
 
 
