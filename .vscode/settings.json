@@ -1,3 +1,4 @@
 {
-    "java.home": "/usr/local/Cellar/openjdk/17.0.1_1"
+    "java.home": "/usr/local/Cellar/openjdk/17.0.1_1",
+    "java.configuration.updateBuildConfiguration": "automatic"
 }

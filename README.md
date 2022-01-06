@@ -1,21 +1,28 @@
-UPDATE: Server has moved. Please use "guitartex2.nikolai-rinas.de" instead
+# Server online: guitartex2.nikolai-rinas.de 
 
-Release Notes
+## Documentation
+  * Available in German
+  * Available in English
+
+
+## Release Notes
 =============
 
-Version 3.4.1
-* New build pipeline with VSC and maven
-* Code cleanup
-* Dropped standalone mac app support
+### Version 3.4.1
+  * New build pipeline with VSC and maven
+  * Code cleanup
+  * Dropped standalone mac app support
+  * Standalone gtx converter available
+  * Published build versions for Windows/Linux/Mac
 
-Version 3.4.0:
-* Code cleanup: Java 1.8 is required
-* App for Mac: Embedded Java runtime. Works standalone
+### Version 3.4.0:
+  * Code cleanup: Java 1.8 is required
+  * App for Mac: Embedded Java runtime. Works standalone
 
-Version 3.3.1
+### Version 3.3.1
   * Defaultwerte angepasst
 
-Version 3.3.0:
+### Version 3.3.0:
   * std:Ausgaben auf die interne Konsole umleiten
   * Harp-Notes hinzugefuegt
   * Parser: An die Harp-Notes angepasst
@@ -26,23 +33,23 @@ Version 3.3.0:
   * Direktivloser Text wird nicht geparsed
   * Link auf die Webseite mit den Shortcuts
 
-Version 3.2.5:
+### Version 3.2.5:
   * Configuration: Systeme werden mid regex erkannt
   * Konsole eingebaut
   * Template fuer neue Dokumente
 
-Version 3.2.4:
+### Version 3.2.4:
   * Sprachbutton hinzugefuegt
   * FAQ Link im Menue hinzugefuegt
 
-Version 3.2.3:
+### Version 3.2.3:
   * UTF8 Support
 
-Version 3.2.2:
+### Version 3.2.2:
   * Parser: Windows \r wird korrekt geloescht
   * Serverseitig: Windows-Dateien werden generell in Unix Format konvertiert  
 
-Version 3.2.1:
+### Version 3.2.1:
   * graphicx Packet entfernt
   * Schriftarten auf lmodern umgeschaltet
   * Neue Direktive {nopagenum}

@@ -31,8 +31,8 @@ public class GuitarTeX2Convert {
         String help = ""
                 + resbundle.getString("appVersion") + "\n"
                 + "Usage: \n"
-                + "        GuitarTeX2Converter  -h               help (this screen)\n"
-                + "        GuitarTeX2Converter  -f <file.gtx>    convert gtx file and print to std out\n"
+                + "        GuitarTeX2Convert  -h               help (this screen)\n"
+                + "        GuitarTeX2Convert  -f <file.gtx>    convert gtx file and print to std out\n"
                 + "\n";
 
         if (args.length != 0) {
