@@ -291,12 +291,15 @@ final class Configurations {
 			mProperties.setProperty("tmpPath", path);
 		}
 		checkResult = checkDirectory(mProperties.getProperty("tmpPath"));
+		/*
 		checkResult = checkResult & checkFile(mProperties.getProperty("linuxPdfViewer"));
 		if ( checkResult == false ) {
 			mConsole.addText("linuxPdfViewer not found");
 			confProblems = confProblems + "linuxPdfViewer not found!\n";
 		}
 		pdfViewer = mProperties.getProperty("linuxPdfViewer");
+		*/
+		pdfViewer = "xdg-open";
 		tmpDir = mProperties.getProperty("tmpPath");
 		return checkResult;
 	}
