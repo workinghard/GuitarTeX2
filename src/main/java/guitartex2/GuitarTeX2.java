@@ -858,7 +858,8 @@ public class GuitarTeX2 extends JFrame {
                 fileName = resbundle.getString("simpleSong2");
             }
             if (e.getActionCommand().equals(resbundle.getString("simpleBook"))) {
-                fileName = myConf.getBookTemplate();
+                //fileName = myConf.getBookTemplate();
+                fileName = resbundle.getString("simpleBook");
             }
             if (mFileChanged == true) {
                 int n = JOptionPane.showConfirmDialog(
@@ -948,7 +949,12 @@ public class GuitarTeX2 extends JFrame {
                     mActFileName = resbundle.getString("mNewFile");
                     mFileChooser.setSelectedFile(null);
                     tabbedPane.setTitleAt(0, resbundle.getString("mNewFile"));
-                }else{
+                }else if (fileName.contentEquals(resbundle.getString("simpleBook"))) {
+                    mEditArea.read(new UnicodeReader(GuitarTeX2.class.getResourceAsStream("/examples/my_first_book.gtb"), "UTF-8"), "");                    
+                    mActFileName = resbundle.getString("mNewFile");
+                    mFileChooser.setSelectedFile(null);
+                    tabbedPane.setTitleAt(0, resbundle.getString("mNewFile"));
+                }else {
                     File f = new File(fileName);
                     FileInputStream fis = new FileInputStream(f);
                     mEditArea.read(new UnicodeReader(fis, "UTF-8"), "");
