@@ -206,8 +206,8 @@ public class PreferencesBox extends JFrame implements ActionListener {
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
-        int aboutTop = new Double((screenSize.getHeight() / 2) - (this.getHeight() / 2)).intValue();
-        int aboutLeft = new Double((screenSize.getWidth() / 2) - (this.getWidth() / 2)).intValue();
+        int aboutTop = Double.valueOf((screenSize.getHeight() / 2) - (this.getHeight() / 2)).intValue();
+        int aboutLeft = Double.valueOf((screenSize.getWidth() / 2) - (this.getWidth() / 2)).intValue();
 
         this.setTitle(resbundle.getString("prefTitle"));
         this.setLocation(aboutLeft, aboutTop);

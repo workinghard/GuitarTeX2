@@ -31,8 +31,8 @@ public class GuitarTeX2Convert {
         String help = ""
                 + resbundle.getString("appVersion") + "\n"
                 + "Usage: \n"
-                + "        GuitarTeX2Converter  -h               help (this screen)\n"
-                + "        GuitarTeX2Converter  -f <file.gtx>    convert gtx file and print to std out\n"
+                + "        GuitarTeX2Convert  -h               help (this screen)\n"
+                + "        GuitarTeX2Convert  -f <file.gtx>    convert gtx file and print to std out\n"
                 + "\n";
 
         if (args.length != 0) {
@@ -47,7 +47,7 @@ public class GuitarTeX2Convert {
                         if (!fileName.equals("")) {
                             File f = new File(fileName);
                             if (f.canRead()) {
-                                GuitarTeX2Convert guitarTeX2Convert = new GuitarTeX2Convert(f);
+                                new GuitarTeX2Convert(f);
                             } else {
                                 System.out.println("error: can't read file\n");
                                 System.out.println(help);

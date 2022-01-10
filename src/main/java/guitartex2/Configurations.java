@@ -20,7 +20,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.net.URL;
 import java.util.Enumeration;
 import java.util.Properties;
 
@@ -85,7 +84,7 @@ final class Configurations {
 				
 				Properties defProps = new Properties();
 				//defProps.load(defaultPropFIS);
-				defProps.load(GuitarTeX2.class.getResourceAsStream(propertiesFileName));
+				defProps.load(GuitarTeX2.class.getResourceAsStream("/"+propertiesFileName));
 				//defaultPropFIS.close();
 				Enumeration<Object> defElements = defProps.keys();
 				mProperties.load( propsFIS );
@@ -121,7 +120,7 @@ final class Configurations {
 					if ( ! new File(userFileDirectory).exists() ) {
 						new File(userFileDirectory).mkdir();
 					}
-					copyFile(GuitarTeX2.class.getResource(propertiesFileName), new File(userFileFullPath));
+					copyFile(GuitarTeX2.class.getResourceAsStream("/"+propertiesFileName), new File(userFileFullPath));
 					return userFileFullPath;
 				}catch (Exception e) {
 					mConsole.addText("creating user config file failed: " + e);
@@ -147,7 +146,7 @@ final class Configurations {
 					if ( ! new File(userFileDirectory).exists() ) {
 						new File(userFileDirectory).mkdir();
 					}
-					copyFile(GuitarTeX2.class.getResource(propertiesFileName), new File(userFileFullPath));
+					copyFile(GuitarTeX2.class.getResourceAsStream("/"+propertiesFileName), new File(userFileFullPath));
 					return userFileFullPath;
 				}catch (Exception e) {
 					mConsole.addText("creating user config file failed: " + e);
@@ -173,7 +172,7 @@ final class Configurations {
 					if ( ! new File(userFileDirectory).exists() ) {
 						new File(userFileDirectory).mkdir();
 					}
-					copyFile(GuitarTeX2.class.getResource(propertiesFileName), new File(userFileFullPath));
+					copyFile(GuitarTeX2.class.getResourceAsStream("/"+propertiesFileName), new File(userFileFullPath));
 					return userFileFullPath;
 				}catch (Exception e) {
 					mConsole.addText("creating user config file failed: " + e);
@@ -197,7 +196,7 @@ final class Configurations {
 				if ( ! new File(userFileDirectory).exists() ) {
 					new File(userFileDirectory).mkdir();
 				}
-				copyFile(GuitarTeX2.class.getResource(propertiesFileName), new File(userFileFullPath));
+				copyFile(GuitarTeX2.class.getResourceAsStream("/"+propertiesFileName), new File(userFileFullPath));
 				return userFileFullPath;
 			}catch (Exception e) {
 				mConsole.addText("creating user config file failed: " + e);
@@ -209,9 +208,9 @@ final class Configurations {
 	}
 	
 	
-	private void copyFile(URL inURL, File out) throws Exception {
-		mConsole.addText("CopyFile: " + inURL);
-            try (InputStream inStream = inURL.openStream(); FileOutputStream fos = new FileOutputStream(out)) {
+	private void copyFile(InputStream inStream, File out) throws Exception {
+		mConsole.addText("CopyFile: ...");
+            try (FileOutputStream fos = new FileOutputStream(out)) {
                 
                 byte[] buf = new byte[1024];
                 int i;
@@ -292,12 +291,15 @@ final class Configurations {
 			mProperties.setProperty("tmpPath", path);
 		}
 		checkResult = checkDirectory(mProperties.getProperty("tmpPath"));
+		/*
 		checkResult = checkResult & checkFile(mProperties.getProperty("linuxPdfViewer"));
 		if ( checkResult == false ) {
 			mConsole.addText("linuxPdfViewer not found");
 			confProblems = confProblems + "linuxPdfViewer not found!\n";
 		}
 		pdfViewer = mProperties.getProperty("linuxPdfViewer");
+		*/
+		pdfViewer = "xdg-open";
 		tmpDir = mProperties.getProperty("tmpPath");
 		return checkResult;
 	}
@@ -495,7 +497,7 @@ final class Configurations {
 			mProperties.setProperty("gtxServer", defProps.getProperty("gtxServer"));
 			mProperties.setProperty("gtxServerPort", defProps.getProperty("gtxServerPort"));
 		} catch (Exception e) {
-                    InfoBox infoBox = new InfoBox(e + "");
+        	new InfoBox(e + "");
 		}
 		/*
 		mPdfViewerField.setText(myConfiguration.getPdfViewer());

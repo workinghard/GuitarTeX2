@@ -53,8 +53,8 @@ public class StatusBox extends JFrame implements ActionListener {
 		resbundle = ResourceBundle.getBundle ("GuitarTeX2strings", Locale.getDefault());
 		
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		statusTop = new Double((screenSize.getHeight()/2) - (statusHeight/2)).intValue();
-		statusLeft = new Double((screenSize.getWidth()/2) - (statusWidth/2)).intValue();
+		statusTop = Double.valueOf((screenSize.getHeight()/2) - (statusHeight/2)).intValue();
+		statusLeft = Double.valueOf((screenSize.getWidth()/2) - (statusWidth/2)).intValue();
 		
 		this.setResizable(false);
 		
@@ -71,7 +71,7 @@ public class StatusBox extends JFrame implements ActionListener {
 			bodyFont = new Font("SansSerif", Font.PLAIN, 10);
 		}
 		
-		java.net.URL imgURL = StatusBox.class.getResource("images/info.png");
+		java.net.URL imgURL = StatusBox.class.getResource("/images/info.png");
 		ImageIcon icon = new ImageIcon(imgURL, "");
 		
 		Panel textPanel = new Panel(new GridBagLayout());
@@ -96,8 +96,8 @@ public class StatusBox extends JFrame implements ActionListener {
 	
 	public StatusBox(String myStatus) {
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		statusTop = new Double((screenSize.getHeight()/2) - (statusHeight/2)).intValue();
-		statusLeft = new Double((screenSize.getWidth()/2) - (statusWidth/2)).intValue();
+		statusTop = Double.valueOf((screenSize.getHeight()/2) - (statusHeight/2)).intValue();
+		statusLeft = Double.valueOf((screenSize.getWidth()/2) - (statusWidth/2)).intValue();
 		
 		this.setResizable(false);
 		

@@ -16,46 +16,56 @@
 
 package guitartex2;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
+//import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.BorderLayout;
 import java.awt.GridBagLayout;
 import java.awt.Panel;
-import java.awt.Toolkit;
-import java.awt.event.ActionEvent;
+//import java.awt.Toolkit;
+
 import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+
 import javax.swing.AbstractAction;
 import javax.swing.Action;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
+import javax.swing.JFrame;
 
 
 
-class InfoBox extends JFrame implements ActionListener{
-	private static final long serialVersionUID = 671314678552270671L;
+public class WarningBox extends JFrame implements ActionListener {
+	private static final long serialVersionUID = -6792186354255191963L;
 
 	private Font titleFont, bodyFont;
 	
-	private static final int statusWidth = 480;
-	private static final int statusHeight = 200;
-	private static int statusTop;
-	private static int statusLeft;
+	private static final int warnWidth = 330;
+	private static final int warnHeight = 150;
+	private static int warnTop;
+	private static int warnLeft;
 	
+	private final JLabel myJLStatus;
+	private final String myInfo;
+	
+	private final Action mOkAction, mInfoAction, mQuitAction;
 	private final ResourceBundle resbundle;
 	
-	
-	public InfoBox(String myInfo) {
+	public WarningBox(String myStatus, String mInfo) {
 		resbundle = ResourceBundle.getBundle ("GuitarTeX2strings", Locale.getDefault());
 		
+		myInfo = mInfo;
+		
+		/* TODO: Bring WarnBox always on top
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		statusTop = new Double((screenSize.getHeight()/2) - (statusHeight/2)).intValue();
-		statusLeft = new Double((screenSize.getWidth()/2) - (statusWidth/2)).intValue();
+		/warnTop = new Double((screenSize.getHeight()/2) - (warnHeight/2)).intValue();
+		warnLeft = new Double((screenSize.getWidth()/2) - (warnWidth/2)).intValue(); 
+		*/
+		warnTop = 0;
+		warnLeft = 0;
 		
 		this.setResizable(false);
 		
@@ -71,29 +81,50 @@ class InfoBox extends JFrame implements ActionListener{
 		if (bodyFont == null) {
 			bodyFont = new Font("SansSerif", Font.PLAIN, 10);
 		}
-		
+		java.net.URL imgURL = WarningBox.class.getResource("/images/info.png");
+		ImageIcon icon = new ImageIcon(imgURL, "");
+		Panel imagePanel = new Panel(new GridBagLayout());
+		Panel textPanel = new Panel(new GridBagLayout());
 		Panel buttonPanel = new Panel(new GridBagLayout());
 		
-		JTextArea mShowArea = new JTextArea(myInfo);
-		mShowArea.setEditable(false);
-		JScrollPane scrollingShowArea = new JScrollPane(mShowArea);
+		myJLStatus = new JLabel(myStatus);
 		
-		Action mOkAction = new buttonActionClass(resbundle.getString("okButton"));
+		imagePanel.add(new JLabel(icon));
+		
+		JLabel spaceLabel = new JLabel();
+		
+		textPanel.add(spaceLabel);
+		textPanel.add(myJLStatus);
+		textPanel.add(spaceLabel);
+
+		mOkAction = new buttonActionClass(resbundle.getString("okButton"));
 		JButton mOkButton = new JButton(mOkAction);
         mOkButton.setActionCommand("mOkAction");
 		
-        buttonPanel.add(new JLabel());
-        buttonPanel.add(mOkButton);
-        buttonPanel.add(new JLabel());
+        mInfoAction = new buttonActionClass(resbundle.getString("infoButton"));
+        JButton mInfoButton = new JButton(mInfoAction);
+        mInfoButton.setActionCommand("mInfoAction");
         
-		this.getContentPane().add (scrollingShowArea, BorderLayout.CENTER);
+        mQuitAction = new buttonActionClass(resbundle.getString("quitButton"));
+        JButton mQuitButton = new JButton(mQuitAction);
+        mQuitButton.setActionCommand("mQuitAction");
+        
+        buttonPanel.add(mQuitButton);
+        buttonPanel.add(mInfoButton);
+        buttonPanel.add(mOkButton);
+        
+		this.getContentPane().add (imagePanel, BorderLayout.PAGE_START);
+		this.getContentPane().add (textPanel, BorderLayout.CENTER);
 		this.getContentPane().add (buttonPanel, BorderLayout.PAGE_END);
 		
 		this.pack();
-		this.setLocation(statusLeft, statusTop);
-		this.setSize(statusWidth, statusHeight);
+		this.setLocation(warnLeft, warnTop);
+		this.setSize(warnWidth, warnHeight);
+		this.setTitle(resbundle.getString("warnTitle"));
 		this.setVisible(true);
+		//this.setResizable(true);
 	}
+	
 	
 	public class buttonActionClass extends AbstractAction {		
 		private static final long serialVersionUID = 3791659234149686228L;
@@ -103,7 +134,17 @@ class InfoBox extends JFrame implements ActionListener{
 		}
                 @Override
 		public void actionPerformed(ActionEvent e) {
-			setVisible(false);
+			String mAction = e.getActionCommand();
+			if ( mAction.equals("mQuitAction")) {
+				System.exit(1);
+			}		
+			if ( mAction.equals("mOkAction")) {
+				setVisible(false);
+				setEnabled(false);
+			}
+			if ( mAction.equals("mInfoAction")) {
+                new InfoBox(myInfo);
+			}
 		}
 	}
 	
@@ -111,11 +152,13 @@ class InfoBox extends JFrame implements ActionListener{
                 @Override
 		public void windowClosing(java.awt.event.WindowEvent event) {
 			setVisible(false);
+			setEnabled(false);
 		}
 	}
-	
+
         @Override
 	public void actionPerformed(ActionEvent newEvent) {
 		setVisible(false);
-	}	
+		setEnabled(false);
+	}		
 }

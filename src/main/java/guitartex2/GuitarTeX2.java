@@ -25,7 +25,6 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Dimension;
-import java.awt.Event;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -130,10 +129,10 @@ public class GuitarTeX2 extends JFrame {
     private Action mTeX2PdfAction;
     private Action mExitAction;
     private Action mConsoleAction;
-    private Action mFAQAction, mShortcutAction;
+    private Action mFAQAction, mShortcutAction, mDocAction;
     private Action mAboutAction;
 
-    private Action mOpenTemplateSongAction, mOpenTemplateBookAction;
+    private Action mOpenTemplateSong1Action, mOpenTemplateSong2Action, mOpenTemplateBookAction;
 
     private static int gtxWidth;
     private static int gtxHeight;
@@ -257,7 +256,7 @@ public class GuitarTeX2 extends JFrame {
 
         //myConf.checkConfig();
         if (myConf.checkConfig() == false) {
-            WarningBox warningBox = new WarningBox(resbundle.getString("confFailed"), myConf.getConfProblems());
+            new WarningBox(resbundle.getString("confFailed"), myConf.getConfProblems());
             System.err.println("loading configuration failed!");
         }
         consoleBox.setGTXClient(myConf);
@@ -272,12 +271,12 @@ public class GuitarTeX2 extends JFrame {
 		//gtxHeight = this.getHeight();
         //gtxWidth = this.getWidth();
         gtxHeight = 650;
-        gtxWidth = 900;
+        gtxWidth = 950;
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         //gtxTop = new Double((screenSize.getHeight()/2) - (gtxHeight/2)).intValue();
         gtxTop = 0;
-        gtxLeft = new Double((screenSize.getWidth() / 2) - (gtxWidth / 2)).intValue();
+        gtxLeft = Double.valueOf((screenSize.getWidth() / 2) - (gtxWidth / 2)).intValue();
 
         this.setLocation(gtxLeft, gtxTop);
         this.setSize(gtxWidth, gtxHeight);
@@ -374,31 +373,31 @@ public class GuitarTeX2 extends JFrame {
             mActionToolBar = new JToolBar(resbundle.getString("actionToolBar"));
             mActionToolBar.setFloatable(false);
             // -- // -- New
-            URL mNewImageURL = GuitarTeX2.class.getResource("images/filenew.png");
+            URL mNewImageURL = GuitarTeX2.class.getResource("/images/filenew.png");
             mNewButton = mActionToolBar.add(mNewAction);
             mNewButton.setIcon(new ImageIcon(mNewImageURL));
             mNewButton.setText("");
             mNewButton.setToolTipText(resbundle.getString("newItem"));
             // -- // -- Open
-            URL mOpenImageURL = GuitarTeX2.class.getResource("images/fileopen.png");
+            URL mOpenImageURL = GuitarTeX2.class.getResource("/images/fileopen.png");
             mOpenButton = mActionToolBar.add(mOpenAction);
             mOpenButton.setIcon(new ImageIcon(mOpenImageURL));
             mOpenButton.setText("");
             mOpenButton.setToolTipText(resbundle.getString("openItem"));
             // -- // -- Save
-            URL mSaveImageURL = GuitarTeX2.class.getResource("images/filesave.png");
+            URL mSaveImageURL = GuitarTeX2.class.getResource("/images/filesave.png");
             mSaveButton = mActionToolBar.add(mSaveAction);
             mSaveButton.setIcon(new ImageIcon(mSaveImageURL));
             mSaveButton.setText("");
             mSaveButton.setToolTipText(resbundle.getString("saveItem"));
             // -- // -- SaveAs
-            URL mSaveAsImageURL = GuitarTeX2.class.getResource("images/filesaveas.png");
+            URL mSaveAsImageURL = GuitarTeX2.class.getResource("/images/filesaveas.png");
             mSaveAsButton = mActionToolBar.add(mSaveAsAction);
             mSaveAsButton.setIcon(new ImageIcon(mSaveAsImageURL));
             mSaveAsButton.setText("");
             mSaveAsButton.setToolTipText(resbundle.getString("saveAsItem"));
             // -- // -- GTX2TeX
-            URL mGTX2TeXURL = GuitarTeX2.class.getResource("images/gtx2tex.png");
+            URL mGTX2TeXURL = GuitarTeX2.class.getResource("/images/gtx2tex.png");
             mGtx2TeXButton = mActionToolBar.add(mGTX2TeXAction);
             mGtx2TeXButton.setIcon(new ImageIcon(mGTX2TeXURL));
             mGtx2TeXButton.setText("");
@@ -425,7 +424,7 @@ public class GuitarTeX2 extends JFrame {
             //mDvi2PdfButton.setToolTipText(resbundle.getString("dvi2pdf"));
             //mDvi2PdfButton.setEnabled(false);
             // --  // --  TEX2PDF
-            URL mTeX2PdfURL = GuitarTeX2.class.getResource("images/tex2pdf.png");
+            URL mTeX2PdfURL = GuitarTeX2.class.getResource("/images/tex2pdf.png");
             mTeX2PdfButton = mActionToolBar.add(mTeX2PdfAction);
             mTeX2PdfButton.setIcon(new ImageIcon(mTeX2PdfURL));
             mTeX2PdfButton.setText("");
@@ -473,20 +472,20 @@ public class GuitarTeX2 extends JFrame {
 
             mHarpToolBar = new JToolBar(resbundle.getString("harpToolBar"));
             //mHarpToolBar.setLayout(new GridLayout(2,9));
-            ImageIcon upButtonIcon = createImageIcon("images/icon-up2.png");
-            ImageIcon downButtonIcon = createImageIcon("images/icon-down2.png");
+            ImageIcon upButtonIcon = createImageIcon("/images/icon-up2.png");
+            ImageIcon downButtonIcon = createImageIcon("/images/icon-down2.png");
             mHarpUp = new JToggleButton(upButtonIcon);
             Action pmUpAction = new mPMHarpActionClass("up");
             mHarpUp.addActionListener(pmUpAction);
             mHarpUp.setSelected(true);
             InputMap inputMap = mEditArea.getInputMap();
-            KeyStroke keyUp = KeyStroke.getKeyStroke(KeyEvent.VK_U, Event.CTRL_MASK);
+            KeyStroke keyUp = KeyStroke.getKeyStroke(KeyEvent.VK_U, KeyEvent.CTRL_DOWN_MASK);
             inputMap.put(keyUp, pmUpAction);
 
             mHarpDown = new JToggleButton(downButtonIcon);
             Action pmDownAction = new mPMHarpActionClass("down");
             mHarpDown.addActionListener(pmDownAction);
-            KeyStroke keyDown = KeyStroke.getKeyStroke(KeyEvent.VK_J, Event.CTRL_MASK);
+            KeyStroke keyDown = KeyStroke.getKeyStroke(KeyEvent.VK_J, KeyEvent.CTRL_DOWN_MASK);
             inputMap.put(keyDown, pmDownAction);
 
             JPanel pm = new JPanel();
@@ -617,7 +616,7 @@ public class GuitarTeX2 extends JFrame {
 
     private JButton createChordButton(Action aButton, int keyEvent) {
         InputMap inputMap = mEditArea.getInputMap();
-        KeyStroke key = KeyStroke.getKeyStroke(keyEvent, Event.CTRL_MASK);
+        KeyStroke key = KeyStroke.getKeyStroke(keyEvent, KeyEvent.CTRL_DOWN_MASK);
         inputMap.put(key, aButton);
 
         JButton chord = new JButton(aButton);
@@ -632,7 +631,7 @@ public class GuitarTeX2 extends JFrame {
 
     private JButton createHarpButton(Action hButton, int keyEvent) {
         InputMap inputMap = mEditArea.getInputMap();
-        KeyStroke key = KeyStroke.getKeyStroke(keyEvent, Event.CTRL_MASK);
+        KeyStroke key = KeyStroke.getKeyStroke(keyEvent, KeyEvent.CTRL_DOWN_MASK);
         inputMap.put(key, hButton);
 
         JButton chord = new JButton(hButton);
@@ -654,7 +653,8 @@ public class GuitarTeX2 extends JFrame {
         fileMenu.addSeparator();
 
         JMenu templateMenu = new JMenu(resbundle.getString("templateItem"));
-        templateMenu.add(mOpenTemplateSongAction);
+        templateMenu.add(mOpenTemplateSong1Action);
+        templateMenu.add(mOpenTemplateSong2Action);
         templateMenu.add(mOpenTemplateBookAction);
         fileMenu.add(templateMenu);
 
@@ -675,6 +675,7 @@ public class GuitarTeX2 extends JFrame {
 
         JMenu helpMenu = menuBar.add(new JMenu(resbundle.getString("helpMenu")));
         helpMenu.add(mConsoleAction);
+        helpMenu.add(mDocAction);
         helpMenu.add(mFAQAction);
         helpMenu.add(mShortcutAction);
         helpMenu.add(mAboutAction);
@@ -695,7 +696,8 @@ public class GuitarTeX2 extends JFrame {
         mOpenAction = new openActionClass(resbundle.getString("openItem"),
                 KeyStroke.getKeyStroke(KeyEvent.VK_O, shortcutKeyMask));
 
-        mOpenTemplateSongAction = new openActionClass(resbundle.getString("simpleSong"));
+        mOpenTemplateSong1Action = new openActionClass(resbundle.getString("simpleSong1"));
+        mOpenTemplateSong2Action = new openActionClass(resbundle.getString("simpleSong2"));
         mOpenTemplateBookAction = new openActionClass(resbundle.getString("simpleBook"));
 
         mSaveAction = new saveActionClass(resbundle.getString("saveItem"),
@@ -716,6 +718,8 @@ public class GuitarTeX2 extends JFrame {
         mTeX2PdfAction = new tex2pdfActionClass(resbundle.getString("tex2pdf"));
 
         mConsoleAction = new consoleActionClass(resbundle.getString("consoleItem"));
+
+        mDocAction = new docActionClass(resbundle.getString("docItem"));
 
         mFAQAction = new faqActionClass(resbundle.getString("faqItem"));
 
@@ -849,11 +853,16 @@ public class GuitarTeX2 extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             String fileName = "";
-            if (e.getActionCommand().equals(resbundle.getString("simpleSong"))) {
-                fileName = myConf.getSongTemplate();
+            if (e.getActionCommand().equals(resbundle.getString("simpleSong1"))) {
+                //fileName = myConf.getSongTemplate();
+                fileName = resbundle.getString("simpleSong1");
+            }
+            if (e.getActionCommand().equals(resbundle.getString("simpleSong2"))) {
+                fileName = resbundle.getString("simpleSong2");
             }
             if (e.getActionCommand().equals(resbundle.getString("simpleBook"))) {
-                fileName = myConf.getBookTemplate();
+                //fileName = myConf.getBookTemplate();
+                fileName = resbundle.getString("simpleBook");
             }
             if (mFileChanged == true) {
                 int n = JOptionPane.showConfirmDialog(
@@ -926,19 +935,36 @@ public class GuitarTeX2 extends JFrame {
                     mFileChanged = false;
                 } catch (IOException ioex) {
                     consoleBox.addText("ERR: " + ioex);
-                    InfoBox infoBox = new InfoBox("Error: " + ioex);
+                    new InfoBox("Error: " + ioex);
                 }
             }
         }
 
         private void openFile(String fileName) {
-            File f = new File(fileName);
             try {
-                FileInputStream fis = new FileInputStream(f);
-                mEditArea.read(new UnicodeReader(fis, "UTF-8"), "");
+                if ( fileName.contentEquals(resbundle.getString("simpleSong1")) ) {
+                    mEditArea.read(new UnicodeReader(GuitarTeX2.class.getResourceAsStream("/examples/griechischer_wein.gtx"), "UTF-8"), "");
+                    mActFileName = resbundle.getString("mNewFile");
+                    mFileChooser.setSelectedFile(null);
+                    tabbedPane.setTitleAt(0, resbundle.getString("mNewFile"));
+                }else if ( fileName.contentEquals(resbundle.getString("simpleSong2"))  ) {
+                    mEditArea.read(new UnicodeReader(GuitarTeX2.class.getResourceAsStream("/examples/lazy_blues.gtx"), "UTF-8"), "");
+                    mActFileName = resbundle.getString("mNewFile");
+                    mFileChooser.setSelectedFile(null);
+                    tabbedPane.setTitleAt(0, resbundle.getString("mNewFile"));
+                }else if (fileName.contentEquals(resbundle.getString("simpleBook"))) {
+                    mEditArea.read(new UnicodeReader(GuitarTeX2.class.getResourceAsStream("/examples/my_first_book.gtb"), "UTF-8"), "");                    
+                    mActFileName = resbundle.getString("mNewFile");
+                    mFileChooser.setSelectedFile(null);
+                    tabbedPane.setTitleAt(0, resbundle.getString("mNewFile"));
+                }else {
+                    File f = new File(fileName);
+                    FileInputStream fis = new FileInputStream(f);
+                    mEditArea.read(new UnicodeReader(fis, "UTF-8"), "");
+                    mActFileName = f.getName();
+                    tabbedPane.setTitleAt(0, mActFileName);
+                }
                 mEditArea.getDocument().addDocumentListener(new MyDocumentListener());
-                mActFileName = f.getName();
-                tabbedPane.setTitleAt(0, mActFileName);
                 mShowTeXArea.setText("");
                 mShowTeXArea.setEnabled(false);
                 mShowTeXArea.setVisible(false);
@@ -947,7 +973,7 @@ public class GuitarTeX2 extends JFrame {
                 mFileChanged = false;
             } catch (IOException ioex) {
                 consoleBox.addText("ERR: " + ioex);
-                InfoBox infoBox = new InfoBox("Error: " + ioex);
+                new InfoBox("Error: " + ioex);
             }
         }
     }
@@ -1221,6 +1247,19 @@ public class GuitarTeX2 extends JFrame {
                     aboutBox.setVisible(true);
                 }
             }
+        }
+
+
+    }
+    public class docActionClass extends AbstractAction {
+
+        public docActionClass(String text) {
+            super(text);
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            BareBonesBrowserLaunch.openURL(resbundle.getString("docURL"));
         }
     }
 

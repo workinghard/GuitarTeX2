@@ -12,7 +12,7 @@ Anmerkungen
    verbindung. Es muss moeglich sein auf den Port 3121 zugreifen zu koennen.
  * Es ist eine beta Version mit einigen bekannten und unbekannten Bugs.
    Ich bin fuer jeden Hinweis und Bemerkung dankbar. Bitte nutzen Sie dafuer
-   die Sourceforge Projektseite http://sourceforge.net/projects/guitartex2
+   die Sourceforge Projektseite https://github.com/workinghard/GuitarTeX2/
 
 
 Notes
@@ -22,7 +22,7 @@ Notes
  * You have to set a Reader in a preferences section
  * Remote server port is 3121, make sure your Firewall let it pass through
  * It's a beta Version with known and unknown bugs. Please report them
-   using a project page http://sourceforge.net/projects/guitartex2
+   using a project page https://github.com/workinghard/GuitarTeX2/
 
 
 Have Fun

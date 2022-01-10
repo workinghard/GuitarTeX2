@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch GuitarTeX2",
+            "request": "launch",
+            "mainClass": "guitartex2.GuitarTeX2",
+            "projectName": "GuitarTeX2"
+        },
+        {
+            "type": "java",
+            "name": "Launch GuitarTeX2Convert",
+            "request": "launch",
+            "mainClass": "guitartex2.GuitarTeX2Convert",
+            "projectName": "GuitarTeX2"
+        }
+    ]
+}
