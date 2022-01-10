@@ -1064,7 +1064,8 @@ public class GTXParser {
                 "\\usepackage{ifthen}\n"
                 + "\\usepackage{calc}\n"
                 + "\\usepackage{gchords}\n"
-                + "\\usepackage{calligra}\n";
+                + "\\usepackage{calligra}\n"
+                + "\\usepackage{adjustbox}\n";
 
         if (noPageNum) {
             myTeXFile = myTeXFile + "\\pagestyle{empty}\n";
@@ -1299,6 +1300,7 @@ public class GTXParser {
                 + "\\usepackage{makeidx}\n"
                 + "\\usepackage{fancyhdr}\n"
                 + "\\usepackage{calligra}\n"
+                + "\\usepackage{adjustbox}\n"
                 + "\\usepackage[pdftex]{thumbpdf}\n";
 
         myTeXFile = myTeXFile + "\\title{\\calligra{" + mBookTitle + "}}\n"
