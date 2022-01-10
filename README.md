@@ -15,7 +15,7 @@ Details can be found [here](https://guitartex2.nikolai-rinas.de/)
   * Code cleanup
   * Dropped standalone mac app support
   * Standalone gtx converter available
-  * Published build versions for Windows/Linux/Mac
+  * Published build versions for Windows/Linux/Mac - x86
   * Guitartab command is now dynamic \textwidth (thanks for contribution @e-dschungel)
   * gtxtabs command changed. If you like the old version instead, please add following line to your song/book:
 
