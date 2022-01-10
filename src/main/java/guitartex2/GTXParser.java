@@ -1133,7 +1133,8 @@ public class GTXParser {
                 + "\\makebox[0cm][l]{\\raisebox{5ex}{\\line(1,0){\\textwidth}}}%\n"
                 + "\\makebox[0cm][l]{\\raisebox{3ex}{\\line(1,0){\\textwidth}}}%\n"
                 + "~}\n\n"
-                + "\\newcommand{\\gtxtabs}[2]{\\makebox[0cm][l]{\\raisebox{#1}{#2}}}\n"
+                //+ "\\newcommand{\\gtxtabs}[2]{\\makebox[0cm][l]{\\raisebox{#1}{#2}}}\n"
+                + "\\newcommand{\\gtxtabs}[2]{{\\makebox[0cm][l]{\\raisebox{#1}{\\adjustbox{margin=0ex 0ex, bgcolor=white}{#2}}}}}"
                 + //	define arrow symbols for harp tunes
                 "\\newcommand{\\hdraw}{\n"
                 + "  \\begin{picture}(0,0)\n"
@@ -1363,7 +1364,8 @@ public class GTXParser {
                 + "\\makebox[0cm][l]{\\raisebox{5ex}{\\line(1,0){\\textwidth}}}%\n"
                 + "\\makebox[0cm][l]{\\raisebox{3ex}{\\line(1,0){\\textwidth}}}%\n"
                 + "~}\n\n"
-                + "\\newcommand{\\gtxtabs}[2]{\\makebox[0cm][l]{\\raisebox{#1}{#2}}}\n"
+                //+ "\\newcommand{\\gtxtabs}[2]{\\makebox[0cm][l]{\\raisebox{#1}{#2}}}\n"
+                + "\\newcommand{\\gtxtabs}[2]{{\\makebox[0cm][l]{\\raisebox{#1}{\\adjustbox{margin=0ex 0ex, bgcolor=white}{#2}}}}}"
                 + //								define arrow symbols for harp tunes
                 "\\newcommand{\\hdraw}{\n"
                 + "  \\begin{picture}(0,0)\n"

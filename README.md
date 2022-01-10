@@ -1,23 +1,25 @@
-# Server online: guitartex2.nikolai-rinas.de 
+# Server online: guitartex2.nikolai-rinas.de - port 3121
 
 ## Build
-You can build it on you platform with maven. I'm using Visual Studio Code with maven an openjdk package to build the release versions.
+You can build it on your platform with maven. I'm using Visual Studio Code with maven an openjdk package to build the release versions.
 
 ## Documentation
-  * [Available in German](https://github.com/workinghard/GuitarTeX2/blob/a9db41ba391bd3afd5dafd1106c3e946599ce262/doc/GuitartTeX2-documentation_de.pdf)
-  * [Available in English](https://github.com/workinghard/GuitarTeX2/blob/3db89f3205e154896073fc75aa1a59e937b54a07/doc/GuitartTeX2-documentation_en.pdf)
+Details can be found [here](https://guitartex2.nikolai-rinas.de/)
 
 
 ## Release Notes
 =============
 
-### Version 3.4.1
-  * New build pipeline with VSC and maven
+### Version 3.5.0
+  * New build pipeline with maven and VSC (optional)
   * Code cleanup
   * Dropped standalone mac app support
   * Standalone gtx converter available
   * Published build versions for Windows/Linux/Mac
   * Guitartab command is now dynamic \textwidth (thanks for contribution @e-dschungel)
+  * gtxtabs command changed. If you like the old version instead, please add following line to your song/book:
+
+    ```\renewcommand{\gtxtabs}[2]{\makebox[0cm][l]{\raisebox{#1}{#2}}}```
 
 ### Version 3.4.0:
   * Code cleanup: Java 1.8 is required
