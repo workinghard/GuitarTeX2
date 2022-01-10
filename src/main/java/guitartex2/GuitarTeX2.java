@@ -129,7 +129,7 @@ public class GuitarTeX2 extends JFrame {
     private Action mTeX2PdfAction;
     private Action mExitAction;
     private Action mConsoleAction;
-    private Action mFAQAction, mShortcutAction;
+    private Action mFAQAction, mShortcutAction, mDocAction;
     private Action mAboutAction;
 
     private Action mOpenTemplateSong1Action, mOpenTemplateSong2Action, mOpenTemplateBookAction;
@@ -675,6 +675,7 @@ public class GuitarTeX2 extends JFrame {
 
         JMenu helpMenu = menuBar.add(new JMenu(resbundle.getString("helpMenu")));
         helpMenu.add(mConsoleAction);
+        helpMenu.add(mDocAction);
         helpMenu.add(mFAQAction);
         helpMenu.add(mShortcutAction);
         helpMenu.add(mAboutAction);
@@ -717,6 +718,8 @@ public class GuitarTeX2 extends JFrame {
         mTeX2PdfAction = new tex2pdfActionClass(resbundle.getString("tex2pdf"));
 
         mConsoleAction = new consoleActionClass(resbundle.getString("consoleItem"));
+
+        mDocAction = new docActionClass(resbundle.getString("docItem"));
 
         mFAQAction = new faqActionClass(resbundle.getString("faqItem"));
 
@@ -1244,6 +1247,19 @@ public class GuitarTeX2 extends JFrame {
                     aboutBox.setVisible(true);
                 }
             }
+        }
+
+
+    }
+    public class docActionClass extends AbstractAction {
+
+        public docActionClass(String text) {
+            super(text);
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            BareBonesBrowserLaunch.openURL(resbundle.getString("docURL"));
         }
     }
 
