@@ -165,7 +165,10 @@ public class PreferencesBox extends JFrame implements ActionListener {
         JLabel mGtxServerPortLabel = new JLabel(resbundle.getString("mPrefGtxServerPort"), JLabel.TRAILING);
         p.add(mGtxServerPortLabel);
         mGtxServerPortField = new JTextField(fieldLength);
-        mGtxServerPortField.setText(Integer.toString(myConfiguration.getGtxServerPort()));
+        int portNr = myConfiguration.getGtxServerPort();
+        if ( portNr > 0 ) {
+            mGtxServerPortField.setText(Integer.toString(portNr));
+        }
         mGtxServerPortLabel.setLabelFor(mGtxServerPortField);
         p.add(mGtxServerPortField);
         p.add(new JLabel());
@@ -283,7 +286,10 @@ public class PreferencesBox extends JFrame implements ActionListener {
         mPdfViewerField.setText(myConfiguration.getPdfViewer());
         mTmpPathField.setText(myConfiguration.getTmpDir());
         mGtxServerField.setText(myConfiguration.getGtxServer());
-        mGtxServerPortField.setText(myConfiguration.getGtxServerPort() + "");
+        int portNr = myConfiguration.getGtxServerPort();
+        if ( portNr > 0 ) {
+            mGtxServerPortField.setText(portNr + "");
+        }
     }
 
     class SymWindow extends java.awt.event.WindowAdapter {
@@ -306,17 +312,10 @@ public class PreferencesBox extends JFrame implements ActionListener {
             myConfiguration.saveSettings();
             GTXClient gtxClient = new GTXClient(myConfiguration.getGtxServer(), myConfiguration.getGtxServerPort());
             gtxClient.setGTXConsole(myConfiguration.getConsole());
-            int openResult = gtxClient.openConnection();
-            if (openResult == 0) {
-                int connResult = gtxClient.checkServerConnection();
-                if (connResult == 0) {
-                    tex2pdfButton.setEnabled(true);
-                    tex2pdfAction.setEnabled(true);
-                } else {
-                    tex2pdfButton.setEnabled(false);
-                    tex2pdfAction.setEnabled(false);
-                }
-                gtxClient.closeConnection();
+            int connResult = gtxClient.checkServerConnection();
+            if (connResult == 0) {
+                tex2pdfButton.setEnabled(true);
+                tex2pdfAction.setEnabled(true);
             } else {
                 tex2pdfButton.setEnabled(false);
                 tex2pdfAction.setEnabled(false);
