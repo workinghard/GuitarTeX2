@@ -1,4 +1,5 @@
-# Server online: guitartex2.nikolai-rinas.de - port 3121
+# Breaking change in version 3.6! Server implementation has changed. Old server is no longer available. Please upgrade! 
+# Server online: https://latex2pdf.nikolai-rinas.de - port can be left blank
 
 ## Build
 You can build it on your platform with maven. I'm using Visual Studio Code with maven an openjdk package to build the release versions.
