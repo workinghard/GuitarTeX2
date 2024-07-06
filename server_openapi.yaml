@@ -1,0 +1,69 @@
+openapi: 3.0.0
+info:
+  title: GTXServer2 server
+  description: This is a server for the [GuitarTex2](https://guitartex2.nikolai-rinas.de) client. It's being used to generate pdf from latex.
+  version: 0.1.0
+servers:
+  - url: https://latex2pdf.nikolai-rinas.de/
+    description: Not monetarized server. For private use only!
+paths:
+  /ping:
+    get:
+      summary: Returns server status
+      responses:
+        '200':
+          description: Ok
+          content:
+            text/plain;charset=utf-8:
+              schema: 
+                type: string
+                example: Ok
+
+  /latex:
+    post:
+      summary: Send latex request
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              properties:
+                version: 
+                  type: string
+                  example: "1.0"
+                file:
+                  type: array
+                  items: {}
+      responses:
+        '200':
+          description: Detailed information about the process
+          content:
+            application/json: 
+              schema:
+                $ref: '#/components/schemas/latexResponse'
+                  
+                  
+  /download/{id}:
+    get:
+      summary: Used to download the file
+      responses:
+        '200':
+          description: File content
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+        style: simple
+
+components:
+  schemas:
+    latexResponse:
+      type: object
+      properties:
+        cmd_rc:
+          type: integer
+        msg:
+          type: string
+        download_url:
+          type: string 
