@@ -10,7 +10,10 @@ Details can be found [here](https://guitartex2.nikolai-rinas.de/)
 
 ## Release Notes
 =============
-
+### Version 3.6.0
+  * New server implemented. Http based and finally secured connection. Because of that the old communication method is no longer supported.
+  * New GTX client. If you want to build something similar yourself, feel free to use server_open.yaml as reference
+     
 ### Version 3.5.0
   * New build pipeline with maven and VSC (optional)
   * Code cleanup
