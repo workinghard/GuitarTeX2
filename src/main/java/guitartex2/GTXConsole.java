@@ -142,15 +142,11 @@ class GTXConsole extends JFrame implements ActionListener{
 	public void setGTXClient(Configurations mConf) {
 		myConf = mConf;
 		gtxClient = new GTXClient(myConf.getGtxServer(), myConf.getGtxServerPort());
-		int openResult = gtxClient.openConnection();
-		if ( openResult == 0 ) {
-			int connResult = gtxClient.checkServerConnection();
-			if ( connResult == 0) {
-				mInputButton.setEnabled(true);
-				mInputAction.setEnabled(true);
-			}
+		int connResult = gtxClient.checkServerConnection();
+		if ( connResult == 0) {
+			mInputButton.setEnabled(true);
+			mInputAction.setEnabled(true);
 		}
-		gtxClient.closeConnection();
 	}
 	
 	public class buttonActionClass extends AbstractAction {		
@@ -170,12 +166,11 @@ class GTXConsole extends JFrame implements ActionListener{
 				
 				// Nachricht senden
 				gtxClient = new GTXClient(myConf.getGtxServer(), myConf.getGtxServerPort());
-				int openResult = gtxClient.openConnection();
-				if ( openResult == 0 ) {
+				int checkResult = gtxClient.checkServerConnection();
+				if ( checkResult == 0 ) {
 					String receiveText = gtxClient.sendText(mInputTextField.getText());
 					addText("Server: " + receiveText);
 				}
-				gtxClient.closeConnection();
 				
 				mInputTextField.setText("");
 				mInputTextField.requestFocus();

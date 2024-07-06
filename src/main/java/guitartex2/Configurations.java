@@ -402,7 +402,17 @@ final class Configurations {
 	}
 	
 	public int getGtxServerPort() {
-		return Integer.parseInt(mProperties.getProperty("gtxServerPort"));
+		int serverPort = -1;
+		try {
+			serverPort = Integer.parseInt(mProperties.getProperty("gtxServerPort"));
+		}catch (Exception e) {
+			// It's fine to have empty field
+		}
+		if ( serverPort > 0 ) {
+			return serverPort;
+		}else{
+			return -1;
+		}
 	}
 	
 	public void setGtxServerPort(String mValue) {

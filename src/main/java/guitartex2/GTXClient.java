@@ -16,77 +16,67 @@
 
 package guitartex2;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.net.Socket;
-import java.net.UnknownHostException;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+import java.net.URL;
+import java.io.*;
+import javax.net.ssl.HttpsURLConnection;
 
 
 public class GTXClient extends Thread{
+    
+    private StatusBox _myStatusBox;
+    private String _texFileName;
+	private String _pdfFileName;
+    private String _showPdf;
 
-	private static String quit = "CMD:123_QUIT_123";
-	private static String transfer = "CMD:123_TRANSFER_123";
-	//private static String ok = "CMD:123_OK_123";
-	private static String failed = "CMD:123_FAILED_123";
-	private static String ping = "CMD:123_PING_123";
-    private static String pong = "CMD:123_PONG_123";
+    private boolean _hostExist = false;
     
-    private int id;
-    private StatusBox myStatusBox;
-    private String fileName;
-    private String showPdf;
-
-    private boolean hostExist = false;
+    private ResourceBundle _resbundle;
     
-    private ResourceBundle resbundle;
-    protected Socket serverConn;
-    DataOutputStream dout;
-    DataInputStream din;
-    
-    private GTXConsole myConsole;
+    private GTXConsole _myConsole;
     private String logCache = "";
-    
+    private String _urlPingEndpoint = "/ping";
+	private String _urlLatexEndpoint = "/latex";
+	private String _httpsURLPing = "";
+	private String _httpsURLLatex = "";
+
     // Konstruktor
     public GTXClient(String host, int port) {
-    	resbundle = ResourceBundle.getBundle ("GuitarTeX2strings", Locale.getDefault());
-    	try {
-    		logToConsole("Trying to connect to " + host + " " + port);
-			serverConn = new Socket(host, port);
-		}catch (UnknownHostException e) {
-			logToConsole("Bad host name given.");
-		}catch (IOException e) {
-			logToConsole("GtxClient: " + e);
+    	_resbundle = ResourceBundle.getBundle ("GuitarTeX2strings", Locale.getDefault());
+		if ( port > 0) {
+			_httpsURLPing = host + ":" + port + _urlPingEndpoint;
+			_httpsURLLatex = host + ":" + port + _urlLatexEndpoint;	
+		}else{
+			_httpsURLPing = host + _urlPingEndpoint;
+			_httpsURLLatex = host + _urlLatexEndpoint;				
 		}
-		hostExist = true;
-		logToConsole("Made server connection");
+		logToConsole("PingURL: " + _httpsURLPing);
+		logToConsole("LatexURL: " + _httpsURLLatex);
+		int available = this.checkServerConnection();
+		if ( available == 0 ) {
+			_hostExist = true;
+			logToConsole("Made server connection");
+		}else{
+			_hostExist = false;
+			logToConsole("No server connection");
+		}
     }
 	
-    public GTXClient(String host, int port, StatusBox sBox, String file, int myId, String sPdf) {
-    	resbundle = ResourceBundle.getBundle ("GuitarTeX2strings", Locale.getDefault());
-    	try {
-    		logToConsole("Trying to connect to " + host + " " + port);
-			serverConn = new Socket(host, port);
-		}catch (UnknownHostException e) {
-			logToConsole("Bad host name given.");
-		}catch (IOException e) {
-			logToConsole("GtxClient: " + e);
-		}
+    public GTXClient(String host, int port, StatusBox sBox, String texFile, String pdfFile, String sPdf) {
+		this(host, port);
 		
-		hostExist = true;
-		showPdf = sPdf;
-		id = myId;
-		myStatusBox = sBox;
-		fileName = file;
+		_showPdf = sPdf;
+		_myStatusBox = sBox;
+		_texFileName = texFile;
+		_pdfFileName = pdfFile;
 		
 		logToConsole("Made server connection");
     }
     
     private void logToConsole(String text) {
-    	if ( myConsole == null ) {
+    	if ( _myConsole == null ) {
     		if ( logCache.equals("") ) {
     			logCache = text;
     		}else{
@@ -94,32 +84,86 @@ public class GTXClient extends Thread{
     		}
     	}else{
     		if ( ! logCache.equals("") ) {
-        		myConsole.addText(logCache);
+        		_myConsole.addText(logCache);
         		logCache = "";
-    			myConsole.addText(text);
+    			_myConsole.addText(text);
     		}else{
-    			myConsole.addText(text);
+    			_myConsole.addText(text);
     		}
     	}
     }
     
     void setGTXConsole(GTXConsole mConsole) {
-    	myConsole = mConsole;
+    	_myConsole = mConsole;
     	if ( ! logCache.equals("") ) {
-    		myConsole.addText(logCache);
+    		_myConsole.addText(logCache);
     		logCache = "";
     	}
     }
     
     void forceLogCache() {
-    	if ( myConsole != null ) {
-    		myConsole.addText(logCache);
+    	if ( _myConsole != null ) {
+    		_myConsole.addText(logCache);
     		logCache = null;
     	}
     }
     
     @Override
     public void run () {
+		// Do something only if the connection exist
+		if ( _hostExist == true ) {
+			if ( _myStatusBox != null ) {
+    			_myStatusBox.setStatus(_resbundle.getString("sendTexFile"));	
+    		}
+			logToConsole("Sending tex file...");
+			try {
+				ServerResponse myResponse = MultipartFormSender.sendMultipartForm(_httpsURLLatex, _texFileName, 
+					"file", "text", "{\"version\":\"1.0\"}");
+				logToConsole(myResponse.toString());
+				if ( myResponse.isInitial() == false ) {
+					if ( myResponse.getCmdRC() == 0 ) {
+						if ( myResponse.getDownloadURL() != "" ) {
+							_myStatusBox.setStatus(_resbundle.getString("receivePdfFile"));
+							// Download file
+							BufferedInputStream in = new BufferedInputStream(new URL(myResponse.getDownloadURL()).openStream());
+  							FileOutputStream fileOutputStream = new FileOutputStream(_pdfFileName);
+    						byte dataBuffer[] = new byte[1024];
+    						int bytesRead;
+    						while ((bytesRead = in.read(dataBuffer, 0, 1024)) != -1) {
+        						fileOutputStream.write(dataBuffer, 0, bytesRead);
+    						}
+							fileOutputStream.close();
+							in.close();
+
+							logToConsole("pdf file received.");
+							// Show PDF
+							_myStatusBox.setStatus("try to show PDF file ...");
+							logToConsole("try to show pdf file");
+							try{ 
+								Runtime.getRuntime().exec(_showPdf);
+							}catch (Exception h) {
+								logToConsole("ERR: " + h);
+							}
+						}else{
+							logToConsole("Download URL is missing");
+						}
+					}else{
+						logToConsole("Tex command failed");
+						new InfoBox(_resbundle.getString("texFailed"));
+					}
+				}else{
+					logToConsole("Got no response from server");
+				}
+			} catch (IOException e) {
+				logToConsole("tex file send failed: " + e.getMessage());
+			}
+		}else{
+			logToConsole("We're offline. Please check internet connection");
+		}
+
+		_myStatusBox.setVisible(false);
+
+		/* 
     	try {
     		if ( myStatusBox != null ) {
     			myStatusBox.setStatus(resbundle.getString("sendTexFile"));	
@@ -171,87 +215,38 @@ public class GTXClient extends Thread{
     	}catch (Exception e) {
     		logToConsole("failed texin file: " + e);
     	}
-    }
-    
-    public int openConnection() {
-    	if ( hostExist) {
-    		try {
-    			dout = new DataOutputStream(serverConn.getOutputStream());
-    			din = new DataInputStream(serverConn.getInputStream());
-    			logToConsole("connection open");
-    			return 0;
-    		}catch (Exception e) {
-    			logToConsole("open connection failed: " + e);
-    			return 1;
-    		}
-    	}else{
-    		logToConsole("Host not exists!");
-    		return 1;
-    	}
-    }
-    
-    public int closeConnection() {
-    	if ( hostExist ) {
-    		try {
-    			dout.writeUTF(quit);
-    			din.close();
-    			dout.close();
-    			logToConsole("connection closed");
-    			return 0;
-    		}catch (Exception e) {
-    			logToConsole("close connection failed: " + e);
-    			return 1;
-    		}
-    	}else{
-    		logToConsole("Host not exists!");
-    		return 1;
-    	}
+		*/
     }
     
     public int checkServerConnection() {
-    	if ( hostExist ) {
-    		try {
-    			logToConsole("sending ping ...");
-    			dout.writeUTF(ping);
-    			logToConsole("awaiting pong ...");
-    			String pingResult = din.readUTF();
-    			logToConsole(pingResult);
-    			if ( pingResult.equals(pong)) {
-    				logToConsole("pong received.");
-    				return 0;
-    			}else {
-    				logToConsole("server doesn't working.");
-    				return 1;
-    			}
-    		}catch (Exception e) {
-    			logToConsole("ping failed " + e);
-    			return 1;
-    		}
-    	}else{
-    		logToConsole("Host not exists!");
-    		return 1;
-    	}
+		try{
+			URL myUrl = new URL(_httpsURLPing);
+			HttpsURLConnection conn = (HttpsURLConnection)myUrl.openConnection();
+			if ( conn.getResponseCode() == 200 ) {
+				return 0;
+			}else{
+				logToConsole("responseCode: " + conn.getResponseCode());
+				InputStream is = conn.getInputStream();
+				InputStreamReader isr = new InputStreamReader(is);
+				BufferedReader br = new BufferedReader(isr);
+				String inputLine;
+				String bodeString = "";
+				while ((inputLine = br.readLine()) != null) {
+					bodeString = bodeString + inputLine;
+				}
+				br.close();
+				logToConsole("Error: " + bodeString);
+				return 1;
+			}
+		}catch (Exception e) {
+			logToConsole("Error: " + e.getMessage());
+			return 1;
+		}
     }
     
     public String sendText(String text) {
-    	String result = "unknown command!";
-    	if ( text.equals("ping") ){
-    		try {
-    			dout.writeUTF(ping);
-    			result = din.readUTF();
-    			if ( result.equals(pong) ) {
-    				result = "pong";
-    			}
-    			dout.writeUTF(quit);
-    		}catch (Exception e) {
-    			logToConsole("Sending failed!");
-    			return "Sending failed!";
-    		}
-    	}
+    	String result = "not implemented yet!";
     	return result;
     }
-/*    public int tex2pdf(String fileName, int id) {
-    	
-    }*/
     
 }

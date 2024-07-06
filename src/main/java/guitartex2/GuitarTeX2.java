@@ -284,15 +284,11 @@ public class GuitarTeX2 extends JFrame {
 
         GTXClient gtxClient = new GTXClient(myConf.getGtxServer(), myConf.getGtxServerPort());
         gtxClient.setGTXConsole(consoleBox);
-        int openResult = gtxClient.openConnection();
-        if (openResult == 0) {
-            int connResult = gtxClient.checkServerConnection();
-            if (connResult == 0) {
-                mTeX2PdfButton.setEnabled(true);
-                mTeX2PdfAction.setEnabled(true);
-            }
+        int connResult = gtxClient.checkServerConnection();
+        if (connResult == 0) {
+            mTeX2PdfButton.setEnabled(true);
+            mTeX2PdfAction.setEnabled(true);
         }
-        gtxClient.closeConnection();
 
         // Create StatusBox
         myStatusBox = new StatusBox();
@@ -1175,13 +1171,14 @@ public class GuitarTeX2 extends JFrame {
                 try (OutputStreamWriter out = new OutputStreamWriter(fos, Charset.forName("UTF-8"))) {
                     out.write(mShowTeXArea.getText());
                     //if ( mShowTeXArea.isEnabled() ) {
-                    String showPdf = myConf.quoteString(myConf.getPdfViewer()) + " " + myConf.quoteString(tmpDir + tmpDirPrefix + pdfFileName);
-                    GTXClient gtxClient = new GTXClient(myConf.getGtxServer(), myConf.getGtxServerPort(), myStatusBox, tmpDir + tmpDirPrefix + texFileName, id, showPdf);
+                    String pdfFileNamePath = tmpDir + tmpDirPrefix + pdfFileName;
+                    String showPdf = myConf.quoteString(myConf.getPdfViewer()) + " " + myConf.quoteString(pdfFileNamePath);
+                    GTXClient gtxClient = new GTXClient(myConf.getGtxServer(), myConf.getGtxServerPort(), myStatusBox, tmpDir + tmpDirPrefix + texFileName, pdfFileNamePath, showPdf);
                     gtxClient.setGTXConsole(consoleBox);
-                    int openResult = gtxClient.openConnection();
-                    if (openResult == 0) {
+                    //int checkResult = gtxClient.checkServerConnection();
+                    //if (checkResult == 0) {
                         gtxClient.start();
-                    }
+                    //}
                     //}
                 }
             } catch (Exception g) {
